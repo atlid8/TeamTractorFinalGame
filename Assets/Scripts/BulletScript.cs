@@ -7,6 +7,8 @@ public class BulletScript : MonoBehaviour
     public int damage;
     public float lifeTime;
 
+    GameObject shooter;
+
     private void Awake() {
         Destroy (gameObject, lifeTime);
     }
@@ -30,7 +32,8 @@ public class BulletScript : MonoBehaviour
             
          // get the point of contact
          GameObject colliderObject = other.gameObject;
-         if (colliderObject.tag == "Mirror"){
+         if (colliderObject.tag == "Mirror")
+         {
             ContactPoint2D contact = other.GetContact(0);
             
             // reflect our old velocity off the contact point's normal vector
@@ -41,13 +44,18 @@ public class BulletScript : MonoBehaviour
             // rotate the object by the same ammount we changed its velocity
             Quaternion rotation = Quaternion.FromToRotation(oldVelocity, reflectedVelocity);
             transform.rotation = rotation * transform.rotation;
+            damage += 1;
          }
-         else if (colliderObject.tag == "Robot") {
-            Physics2D.IgnoreCollision(GetComponent<Collider2D>(), colliderObject.GetComponent<Collider2D>());
-        }
         else if(colliderObject.GetComponent<HitPointManager>() != null)
         {
             colliderObject.GetComponent<HitPointManager>().takeDamage(damage);
+            Destroy(gameObject);
         }
      }
+
+    public void setBulletShooter(GameObject owner)
+    {
+        shooter = owner;
+        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), shooter.GetComponent<Collider2D>());
+    }
 }

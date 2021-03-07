@@ -27,6 +27,7 @@ public class StationaryEnemy : MonoBehaviour
 
         if (timeBetweenShots <= 0) {
             GameObject shot = Instantiate(bullet, this.transform.position, this.transform.rotation);
+            shot.GetComponent<BulletScript>().setBulletShooter(gameObject);
             Rigidbody2D rb = shot.GetComponent<Rigidbody2D>();
             rb.AddForce(this.transform.up * 20f, ForceMode2D.Impulse);
             timeBetweenShots = startTimeBetweenShots;
