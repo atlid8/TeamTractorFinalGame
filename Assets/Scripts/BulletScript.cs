@@ -42,5 +42,12 @@ public class BulletScript : MonoBehaviour
             Quaternion rotation = Quaternion.FromToRotation(oldVelocity, reflectedVelocity);
             transform.rotation = rotation * transform.rotation;
          }
+         else if (colliderObject.tag == "Robot") {
+            Physics2D.IgnoreCollision(GetComponent<Collider2D>(), colliderObject.GetComponent<Collider2D>());
+        }
+        else if(colliderObject.GetComponent<HitPointManager>() != null)
+        {
+            colliderObject.GetComponent<HitPointManager>().takeDamage(damage);
+        }
      }
 }

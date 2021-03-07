@@ -6,7 +6,7 @@ public class MirrorScript : MonoBehaviour
 {
     // Start is called before the first frame update
     public int health;
-    bool reflects = true;
+    public bool reflects = true;
     void Start()
     {
         

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7669932578804364441}
   - component: {fileID: 7669932578804364440}
   - component: {fileID: 7669932578804364391}
+  - component: {fileID: 3191582057181482635}
   m_Layer: 0
   m_Name: StationaryEnemy
   m_TagString: Untagged
@@ -99,6 +100,19 @@ MonoBehaviour:
   startTimeBetweenShots: 1
   bullet: {fileID: 7754768123783791977, guid: c2df36afde51de04f9c2a7bb41b6fba2, type: 3}
   player: {fileID: 0}
+--- !u!114 &3191582057181482635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7669932578804364390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf91010c42c35f489f2d6523b1eac8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHitPoints: 15
 --- !u!1 &7669932579969276441
 GameObject:
   m_ObjectHideFlags: 0
