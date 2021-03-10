@@ -51,6 +51,11 @@ public class BulletScript : MonoBehaviour
             colliderObject.GetComponent<HitPointManager>().takeDamage(damage);
             Destroy(gameObject);
         }
+        else if(colliderObject.GetComponent<PlayerHPManager>() != null)
+        {
+            colliderObject.GetComponent<PlayerHPManager>().takeDamage(damage);
+            Destroy(gameObject);
+        }
      }
 
     public void setBulletShooter(GameObject owner)
