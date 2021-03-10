@@ -5,6 +5,7 @@ using UnityEngine;
 public class SuicideBomb : MonoBehaviour
 {
     public float bombTime=5.0f;
+    public GameObject explosionPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,8 @@ public class SuicideBomb : MonoBehaviour
     void Update()
     {
         if (bombTime <= 0){
-            return;
+            GameObject explosion = Instantiate(explosionPrefab, this.transform.position, this.transform.rotation);
+            Destroy(gameObject);
         }
         else{
             bombTime -= Time.deltaTime;
