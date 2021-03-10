@@ -56,6 +56,6 @@ public class BulletScript : MonoBehaviour
     public void setBulletShooter(GameObject owner)
     {
         shooter = owner;
-        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), shooter.GetComponent<Collider2D>());
+        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), shooter.GetComponentInChildren<Collider2D>());
     }
 }

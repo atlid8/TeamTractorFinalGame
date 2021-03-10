@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class HitPointManager : MonoBehaviour
 {
+    public bool shakeScreen = false;
     public int currentHitPoints;
+    public GameObject camera;
+    private CameraShake cameraShake;
     // Start is called before the first frame update
     void Start()
     {
-        
+        cameraShake = camera.GetComponent<CameraShake>();
     }
 
     // Update is called once per frame
@@ -19,9 +22,17 @@ public class HitPointManager : MonoBehaviour
     public void takeDamage(int damageAmount)
     {
         currentHitPoints -= damageAmount;
+        if (shakeScreen){
+            cameraShake.ShakeCamera();
+        }
         if (currentHitPoints <= 0)
         {
-            Destroy(gameObject);
+            if (transform.parent != null){
+                Destroy(transform.parent.gameObject);
+            }
+            else{
+                Destroy(gameObject);
+            }
         }
     }
 }
