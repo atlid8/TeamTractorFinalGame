@@ -1,0 +1,336 @@
+fileFormatVersion: 2
+guid: 3f79dff5585e54475ac9a55c79d57eca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1355558685636998732
+    second: Legs0000
+  - first:
+      213: 8490457606426484458
+    second: Legs0001
+  - first:
+      213: 629894217552133888
+    second: Legs0002
+  - first:
+      213: 5820238673544016466
+    second: Legs0003
+  - first:
+      213: -5875705477141314807
+    second: Legs0004
+  - first:
+      213: 8076157084184735268
+    second: Legs0005
+  - first:
+      213: -1993607006320068309
+    second: Legs0006
+  - first:
+      213: 743467587649388457
+    second: Legs0007
+  - first:
+      213: -8284224162768833951
+    second: Legs0008
+  - first:
+      213: -7289402784434144247
+    second: Legs0009
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Legs0000
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 861
+        width: 257
+        height: 161
+      alignment: 9
+      pivot: {x: 0.5356031, y: 0.05062108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46b6994179efc210800000000000000
+      internalID: 1355558685636998732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Legs0001
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 865
+        width: 295
+        height: 157
+      alignment: 9
+      pivot: {x: 0.4937288, y: 0.026433082}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee509b653a24d570800000000000000
+      internalID: 8490457606426484458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Legs0002
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 877
+        width: 342
+        height: 145
+      alignment: 9
+      pivot: {x: 0.45219296, y: -0.14379315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f744b1475ddb800800000000000000
+      internalID: 629894217552133888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Legs0003
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 714
+        width: 347
+        height: 145
+      alignment: 9
+      pivot: {x: 0.4514409, y: -0.17137936}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 252f4949c34a5c050800000000000000
+      internalID: 5820238673544016466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Legs0004
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 704
+        width: 333
+        height: 155
+      alignment: 9
+      pivot: {x: 0.42237234, y: -0.011935524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 903cc26dffc457ea0800000000000000
+      internalID: -5875705477141314807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Legs0005
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 691
+        width: 193
+        height: 168
+      alignment: 9
+      pivot: {x: 0.43341964, y: 0.06041663}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ee5192416441070800000000000000
+      internalID: 8076157084184735268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Legs0006
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 513
+        width: 244
+        height: 176
+      alignment: 9
+      pivot: {x: 0.3879098, y: 0.09744315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b29ff868df84554e0800000000000000
+      internalID: -1993607006320068309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Legs0007
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 544
+        width: 342
+        height: 145
+      alignment: 9
+      pivot: {x: 0.45219296, y: -0.14379315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9afbbd7f4d3515a00800000000000000
+      internalID: 743467587649388457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Legs0008
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 544
+        width: 347
+        height: 145
+      alignment: 9
+      pivot: {x: 0.4514409, y: -0.17137936}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 162b4720406880d80800000000000000
+      internalID: -8284224162768833951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Legs0009
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 354
+        width: 295
+        height: 157
+      alignment: 9
+      pivot: {x: 0.4937288, y: 0.026433082}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90c3f09d9c6d6da90800000000000000
+      internalID: -7289402784434144247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
