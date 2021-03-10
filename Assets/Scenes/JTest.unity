@@ -916,7 +916,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcf91010c42c35f489f2d6523b1eac8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shakeScreen: 0
   currentHitPoints: 10
+  camera: {fileID: 0}
 --- !u!1001 &1383376329
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1281,7 +1283,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcf91010c42c35f489f2d6523b1eac8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shakeScreen: 1
   currentHitPoints: 10
+  camera: {fileID: 1666848661}
 --- !u!1 &1666848661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1296,7 +1300,7 @@ GameObject:
   - component: {fileID: 1666848665}
   m_Layer: 0
   m_Name: CM vcam1
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1852,6 +1856,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3056769734634714752, guid: 0ab9377f080cbe5409ad8518eb463195, type: 3}
+      propertyPath: endReachedDistance
+      value: 7.73
+      objectReference: {fileID: 0}
     - target: {fileID: 3056769734634714753, guid: 0ab9377f080cbe5409ad8518eb463195, type: 3}
       propertyPath: m_RootOrder
       value: 9
