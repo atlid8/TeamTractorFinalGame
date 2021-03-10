@@ -21,7 +21,12 @@ public class HitPointManager : MonoBehaviour
         currentHitPoints -= damageAmount;
         if (currentHitPoints <= 0)
         {
-            Destroy(gameObject);
+            if (transform.parent != null){
+                Destroy(transform.parent.gameObject);
+            }
+            else{
+                Destroy(gameObject);
+            }
         }
     }
 }
