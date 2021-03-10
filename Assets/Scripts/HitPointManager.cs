@@ -6,26 +6,24 @@ public class HitPointManager : MonoBehaviour
 {
     public int currentHitPoints;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    public GameObject room;
+    private RoomManager roomManager;
 
+    void Start(){
+        roomManager = room.GetComponent<RoomManager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void takeDamage(int damageAmount)
     {
         currentHitPoints -= damageAmount;
         if (currentHitPoints <= 0)
         {
             if (transform.parent != null){
+                roomManager.killedEnemy();
                 Destroy(transform.parent.gameObject);
             }
             else{
+                roomManager.killedEnemy();
                 Destroy(gameObject);
             }
         }

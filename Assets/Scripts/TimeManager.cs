@@ -10,7 +10,7 @@ public class TimeManager : MonoBehaviour
     public float seconds = 10;
     public float miliseconds = 0;   
 
-    private bool stop = false;
+    public bool stop = false;
 
     void Update(){    
         if (!stop){

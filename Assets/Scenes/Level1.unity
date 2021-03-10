@@ -719,6 +719,26 @@ MonoBehaviour:
   timerDisplay: {fileID: 2032618090}
   seconds: 10
   miliseconds: 0
+  stop: 0
+--- !u!1 &1332328652 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 568734048889599146, guid: b270d842c4c797e47b68088792325177, type: 3}
+  m_PrefabInstance: {fileID: 568734049387083215}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1332328653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332328652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fbd52cc33e5a1b4b9e6f13b1546d0c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberOfEnemies: 2
+  timerCanvas: {fileID: 1162831386}
 --- !u!1001 &1383376329
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1657,6 +1677,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3275701822205596325, guid: d2b3fcd25bc7c414f9175ffb96504616, type: 3}
+      propertyPath: room
+      value: 
+      objectReference: {fileID: 1332328652}
     - target: {fileID: 6537114063207485616, guid: d2b3fcd25bc7c414f9175ffb96504616, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1718,6 +1742,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3191582057181482635, guid: 4f4996313b0491c469bd9eae21333e27, type: 3}
+      propertyPath: room
+      value: 
+      objectReference: {fileID: 1332328652}
     - target: {fileID: 7669932578804364390, guid: 4f4996313b0491c469bd9eae21333e27, type: 3}
       propertyPath: m_Name
       value: StationaryEnemy
