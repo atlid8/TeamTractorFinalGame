@@ -25,8 +25,8 @@ public class PlayerHPManager : MonoBehaviour
     }
     public void takeDamage(int damageAmount)
     {
-        if (timeManager.seconds >= 1 && damageAmount <= 1){
-            timeManager.seconds -= damageAmount;
+        timeManager.seconds -= damageAmount;
+        if (timeManager.seconds >= 1){
             StartCoroutine(DamageText());
         }
         else {
