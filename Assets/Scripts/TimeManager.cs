@@ -5,6 +5,7 @@ using TMPro;
 
 public class TimeManager : MonoBehaviour
 {
+    public GameObject player;
     public TextMeshProUGUI timerDisplay;
     public float seconds = 10;
     public float miliseconds = 0;   
@@ -22,6 +23,7 @@ public class TimeManager : MonoBehaviour
                     stop = true;
                     miliseconds = 0;
                     // Kill character.
+                    Destroy(player);
                 }
             }    
         if (!stop){miliseconds -= Time.deltaTime * 100;}
