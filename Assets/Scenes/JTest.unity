@@ -690,7 +690,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 848c9c923580f0b47b7feddb5e78573d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   timerDisplay: {fileID: 2032618090}
+  seconds: 10
+  miliseconds: 0
 --- !u!114 &1162831392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1134,7 +1137,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shakeScreen: 1
-  currentHitPoints: 10
+  timerCanvas: {fileID: 1162831386}
+  timerDisplay: {fileID: 2032618090}
   camera: {fileID: 1666848661}
 --- !u!1 &1666848661
 GameObject:
@@ -1419,7 +1423,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Room 1
+  m_text: 10
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
