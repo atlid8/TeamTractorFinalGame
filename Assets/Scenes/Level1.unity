@@ -715,6 +715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 848c9c923580f0b47b7feddb5e78573d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1633610918}
   timerDisplay: {fileID: 2032618090}
   seconds: 10
   miliseconds: 0
