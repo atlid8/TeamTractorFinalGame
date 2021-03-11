@@ -636,7 +636,6 @@ GameObject:
   m_Component:
   - component: {fileID: 568734050012077789}
   - component: {fileID: 568734050012077788}
-  - component: {fileID: 2992348777874995975}
   m_Layer: 0
   m_Name: Room1CameraCollider
   m_TagString: Untagged
@@ -688,21 +687,6 @@ PolygonCollider2D:
       - {x: -17.35224, y: -10.9693}
       - {x: 16.491043, y: -10.974072}
       - {x: 16.498802, y: 9.578956}
---- !u!114 &2992348777874995975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 568734050012077790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fbd52cc33e5a1b4b9e6f13b1546d0c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cleared: 0
-  numberOfEnemies: 0
-  timerCanvas: {fileID: 0}
 --- !u!1 &3637086233176002249
 GameObject:
   m_ObjectHideFlags: 0
