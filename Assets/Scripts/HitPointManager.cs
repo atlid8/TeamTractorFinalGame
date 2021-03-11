@@ -28,4 +28,8 @@ public class HitPointManager : MonoBehaviour
             }
         }
     }
+
+    public void destroyFromParent(){
+        roomManager.killedEnemy();
+    }
 }

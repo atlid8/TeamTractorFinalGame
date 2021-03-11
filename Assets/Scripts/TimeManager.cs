@@ -14,6 +14,7 @@ public class TimeManager : MonoBehaviour
 
     void Update(){    
         if (!stop){
+            Debug.Log("Stop is false!");
             if(miliseconds <= 0){
                 miliseconds = 100;
                 if(seconds > 0){

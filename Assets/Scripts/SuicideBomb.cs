@@ -7,6 +7,7 @@ public class SuicideBomb : MonoBehaviour
     public bool countdownStarted=false;
     public float bombTime=5.0f;
     public GameObject explosionPrefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,7 @@ public class SuicideBomb : MonoBehaviour
     {
         if (bombTime <= 0){
             GameObject explosion = Instantiate(explosionPrefab, this.transform.position, this.transform.rotation);
+            transform.GetChild(0).GetComponent<HitPointManager>().destroyFromParent();
             Destroy(gameObject);
         }
         else if (countdownStarted){

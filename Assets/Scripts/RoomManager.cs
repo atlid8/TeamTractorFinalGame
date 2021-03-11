@@ -20,6 +20,7 @@ public class RoomManager : MonoBehaviour
     void Update()
     {
         if (numberOfEnemies <= 0){
+            Debug.Log("Number of enemies is 0 or less");
             timeManager.stop = true;
             cleared = true;
         }

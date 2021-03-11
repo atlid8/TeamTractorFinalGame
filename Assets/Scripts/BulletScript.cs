@@ -56,6 +56,10 @@ public class BulletScript : MonoBehaviour
             colliderObject.GetComponent<PlayerHPManager>().takeDamage(damage);
             Destroy(gameObject);
         }
+        //layer 3 is the obstacle layer
+        else if(colliderObject.layer == 3){
+            Destroy(gameObject);
+        }
      }
 
     public void setBulletShooter(GameObject owner)
