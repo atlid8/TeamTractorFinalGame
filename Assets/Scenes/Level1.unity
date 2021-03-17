@@ -132,11 +132,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3790058735512114458, guid: 6c639dfcff9e9944197f26e663b46507, type: 3}
       propertyPath: showNavGraphs
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3790058735512114458, guid: 6c639dfcff9e9944197f26e663b46507, type: 3}
       propertyPath: data.dataString
-      value: UEsDBBQAAAgIAAAAIexRvoJGVgIAAPwEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMziVjMxBCb60hpAdCJjSTiy9CWmMNsuTRR/ga/ntXssGUTrkg73u7em937RMRytbAnDZzI/hCcyDfeyScybdeB77Anm60WokjXDifgrsykGjkvFMnNMbTkGZ1Bc4I9kNtZCAnGPRKFNpUM76BTFtnMVxQaQEho13IVhg69cge//qTkHLA02AcTkc8TZLeGY8MlAPTUYfpwyT8HgdtxoXf0L1iklY18KC9y0qfhi09TRqiQl8tJ3hgWkphW1HEHepoOqO19WgJCVxQNBmVhJtLEJvStQ/X5GVRWHCtKEMPU2GwV01V8lM3Dayo3TbKvqj04Z6nqKgpufgH7acRLoyuXi63ogsMuVKw7Ts9MGrdTX9vw9NOdhrbs6NyS9cSPktQr3putFccQWd8SPUWBtPu8WosK4Ftu3gj9S7o667fyd1wgodz9L7PpKjWAXoYNoGV1LHbcQfA4Fx+oeC4IbYtgdGg4sPCb7q5XaUWeBbGOoRalyrIW2tvApXMYs+CG+8ybRSY2wo1KCrd4Q3ruPsJ3mH/z3qm4a1pb2+xy8twlxLDHT9J7qA3vbtOy5Z6twBbLr2TQkHX6gC8YqMyrVSzYLeWLmkrbwrKbtI2XvC/d4tAQcfJcPCUFpxNCjroF5PHhLP1OBmv09FoNCZx+YRCn1S+NULb9uDYVFdc4aJdPia9uaF1XHZu6G4ujpW2HVOoQq+YAVDLpsJVOBi8BF9KPuMCG7QC54SKAyennEjNtsDza6E8Op3tnaF5VyUntfjSLkRyksWvR07O5PwHUEsDBBQAAAgIAAAAIezDMimIbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM01VFQSi9KLMgoBooYgjilmSkgdrRSalqiuYGJkYVhWkqyZVqikW6apZlBSnKSuYF5kqGpqam5UixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAAIexRvoJGVgIAAPwEAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAAIezDMimIbQAAAHgAAAAJACQAAAAAAAAAAAAAAKMCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAWwMAAAAA
+      value: UEsDBBQAAAgIAAAAIeyeFGWsagIAAAwFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMziUjU4hNb61DSA/5mNBOLr4Ia401yJJHkgMkw3/vShaY0ikXpN23u2/frvxJhLItlE6bpRH8UXMg30bEn8mX0eB8gD3baLUSH3DCvAnuag9iAfPKnNBoT3yY1Q04I8rvaiM9mKKxU6LSplnwDeTaOovmikkL6DLa+WiFps8R2ePfeO5DDniapP70gac5HR3xWIJyYAbo12lEjunN3P+yLAaMk5s0y5Jpkt4uxjQN0Z0qJWta4L6VIUlCs5jlNgk4hV1GCL2Z+bJaSmEjSeIObRAhZ63tsEUEcMGw6cBsgtcaxKZ28XIOfq4qCy4qYtjhThjUrs9Kfuhe0IbZbU/tncnO18kCpz7l4z/ecU+5Mrp5OFVNqK/galFuX9mhZNZd6H1pvhtoJ0GfHZNbtpbwVoN60kujO8XR6UznQzsLk7vhem4sr6HcDvae6pWxawfBT+Ol51mNjsfQ+z6XolkH3ae9YSV1UDvsBBiczE8kHDbGxhRo9Sx+W/jFNperFR33wliHrtil8vTWujMeShZBM99N53JtFJjLDC0oJt3hBfO46wle+f4fdc/8K4rVo+/0OK5CgnnAU3rletG787RsrXePYOvnzkmhYJDaO55QqFwr1S/YZUunsFVnKlZehG06wf/eLQIVS+l0kiUVL+cVm4yr+S3l5Tql6TqZzWYpCcsnFPbJ5EtPNMqDY1NDcoWLdvq4jJaGtWHZuWG7pfhotB2QQlV6VRoA9dxnOBMHg0XwWfIFFyjQCpwTKgycfBZE6nILvDgnKkKni70zrBiyFKQV79p5S0Hy8DUpyJEc/wBQSwMEFAAACAgAAAAh7MMyKYhtAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTVUVBKL0osyCgGihiCOKWZKSB2tFJqWqK5gYmRhWFaSrJlWqKRbpqlmUFKcpK5gXmSoampqblSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAAAh7J4UZaxqAgAADAUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAAAh7MMyKYhtAAAAeAAAAAkAJAAAAAAAAAAAAAAAtwIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABvAwAAAAA=
       objectReference: {fileID: 0}
     - target: {fileID: 3790058735512114459, guid: 6c639dfcff9e9944197f26e663b46507, type: 3}
       propertyPath: m_RootOrder
@@ -2847,12 +2847,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2015161071}
     - target: {fileID: 3056769734634714752, guid: 0ab9377f080cbe5409ad8518eb463195, type: 3}
+      propertyPath: radius
+      value: 1.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056769734634714752, guid: 0ab9377f080cbe5409ad8518eb463195, type: 3}
       propertyPath: canMove
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3056769734634714752, guid: 0ab9377f080cbe5409ad8518eb463195, type: 3}
       propertyPath: canSearch
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056769734634714752, guid: 0ab9377f080cbe5409ad8518eb463195, type: 3}
+      propertyPath: slowdownDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056769734634714752, guid: 0ab9377f080cbe5409ad8518eb463195, type: 3}
+      propertyPath: endReachedDistance
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056769734634714752, guid: 0ab9377f080cbe5409ad8518eb463195, type: 3}
+      propertyPath: pickNextWaypointDist
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3056769734634714753, guid: 0ab9377f080cbe5409ad8518eb463195, type: 3}
       propertyPath: m_RootOrder
@@ -2908,7 +2924,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3056769734634714757, guid: 0ab9377f080cbe5409ad8518eb463195, type: 3}
       propertyPath: canShoot
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056769734634714757, guid: 0ab9377f080cbe5409ad8518eb463195, type: 3}
+      propertyPath: timeBetweenShots
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3056769734634714758, guid: 0ab9377f080cbe5409ad8518eb463195, type: 3}
       propertyPath: target
@@ -2934,6 +2954,18 @@ PrefabInstance:
     - target: {fileID: 3056769734634714752, guid: e7ce02c69b55f5b47a16014452a3f70f, type: 3}
       propertyPath: canSearch
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056769734634714752, guid: e7ce02c69b55f5b47a16014452a3f70f, type: 3}
+      propertyPath: slowdownDistance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056769734634714752, guid: e7ce02c69b55f5b47a16014452a3f70f, type: 3}
+      propertyPath: endReachedDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056769734634714752, guid: e7ce02c69b55f5b47a16014452a3f70f, type: 3}
+      propertyPath: pickNextWaypointDist
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3056769734634714753, guid: e7ce02c69b55f5b47a16014452a3f70f, type: 3}
       propertyPath: m_RootOrder
