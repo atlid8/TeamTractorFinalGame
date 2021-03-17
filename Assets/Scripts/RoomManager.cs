@@ -6,11 +6,17 @@ using Pathfinding;
 public class RoomManager : MonoBehaviour
 {
     // Start is called before the first frame update
+    public float roomTime;
     public bool cleared;
     public bool current;
     public int numberOfEnemies;
     public GameObject timerCanvas;
+    public bool leftDoorOpens;
+    public bool rightDoorOpens;
+    public bool topDoorOpens;
+    public bool bottomDoorOpens;
     private TimeManager timeManager;
+
 
     private bool closedDoors;
     private GameObject topDoor;
@@ -52,10 +58,10 @@ public class RoomManager : MonoBehaviour
             cleared = true;
         }
         if (cleared && closedDoors){
-            if (leftDoor){anim = leftDoor.GetComponent<Animator>(); anim.SetBool("openDoors", true); leftDoor.transform.Find("Red").gameObject.SetActive(false); leftDoor.transform.Find("ClosedDoorCollider").gameObject.SetActive(false);}
-            if (rightDoor){anim = rightDoor.GetComponent<Animator>(); anim.SetBool("openDoors", true); rightDoor.transform.Find("Red").gameObject.SetActive(false); rightDoor.transform.Find("ClosedDoorCollider").gameObject.SetActive(false);}
-            if (topDoor){anim = topDoor.GetComponent<Animator>(); anim.SetBool("openDoors", true); topDoor.transform.Find("Red").gameObject.SetActive(false); topDoor.transform.Find("ClosedDoorCollider").gameObject.SetActive(false);}
-            if (bottomDoor){anim = bottomDoor.GetComponent<Animator>(); anim.SetBool("openDoors", true); bottomDoor.transform.Find("ClosedDoorCollider").gameObject.SetActive(false);}
+            if (leftDoor && leftDoorOpens){anim = leftDoor.GetComponent<Animator>(); anim.SetBool("openDoors", true); leftDoor.transform.Find("Red").gameObject.SetActive(false); leftDoor.transform.Find("ClosedDoorCollider").gameObject.SetActive(false);}
+            if (rightDoor && rightDoorOpens){anim = rightDoor.GetComponent<Animator>(); anim.SetBool("openDoors", true); rightDoor.transform.Find("Red").gameObject.SetActive(false); rightDoor.transform.Find("ClosedDoorCollider").gameObject.SetActive(false);}
+            if (topDoor && topDoorOpens){anim = topDoor.GetComponent<Animator>(); anim.SetBool("openDoors", true); topDoor.transform.Find("Red").gameObject.SetActive(false); topDoor.transform.Find("ClosedDoorCollider").gameObject.SetActive(false);}
+            if (bottomDoor && bottomDoorOpens){anim = bottomDoor.GetComponent<Animator>(); anim.SetBool("openDoors", true); bottomDoor.transform.Find("ClosedDoorCollider").gameObject.SetActive(false);}
             closedDoors = false;
         }
     }
@@ -65,7 +71,10 @@ public class RoomManager : MonoBehaviour
     }
 
     public void setCurrentRoom(){
+        current = true;
         if (!cleared){
+            timeManager.seconds += roomTime;
+            timeManager.stop = false;
             Transform EnemiesObject = transform.Find("Enemies");
             foreach (Transform enemy in EnemiesObject.transform)
             {

@@ -1453,9 +1453,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fbd52cc33e5a1b4b9e6f13b1546d0c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roomTime: 10
   cleared: 0
+  current: 0
   numberOfEnemies: 2
   timerCanvas: {fileID: 0}
+  leftDoorOpens: 0
+  rightDoorOpens: 0
+  topDoorOpens: 0
+  bottomDoorOpens: 0
 --- !u!1 &2114736138146969681
 GameObject:
   m_ObjectHideFlags: 0

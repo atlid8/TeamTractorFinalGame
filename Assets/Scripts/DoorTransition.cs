@@ -26,8 +26,8 @@ public class DoorTransition : MonoBehaviour
             confiner.m_BoundingShape2D = newCollider;
             if (right) {other.transform.position += new Vector3(1, 0, 0);}
             if (left) {other.transform.position -= new Vector3(1, 0, 0);}
-            if (up) {other.transform.position += new Vector3(0, 1, 0);}
-            if (down) {other.transform.position -= new Vector3(0, 1, 0);}
+            if (up) {other.transform.position += new Vector3(0, 2, 0);}
+            if (down) {other.transform.position -= new Vector3(0, 3, 0);}
         }
     }
 }

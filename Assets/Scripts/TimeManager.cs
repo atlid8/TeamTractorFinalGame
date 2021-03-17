@@ -23,13 +23,16 @@ public class TimeManager : MonoBehaviour
                     stop = true;
                     miliseconds = 0;
                     // Kill character.
-                    Destroy(player);
+                    Application.LoadLevel(0);
                 }
             }    
         if (!stop){miliseconds -= Time.deltaTime * 100;}
              
         //Debug.Log(string.Format("{0}:{1}:{2}", minutes, seconds, (int)miliseconds));
         timerDisplay.text = string.Format("{0}:{1}", seconds, (int)miliseconds);
+     if(Input.GetKeyDown(KeyCode.R))
+         Application.LoadLevel(0); //or whatever number your scene is
+ 
         }
     }
 }
