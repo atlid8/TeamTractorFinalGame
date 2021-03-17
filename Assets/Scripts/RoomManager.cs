@@ -48,10 +48,10 @@ public class RoomManager : MonoBehaviour
             cleared = true;
         }
         if (cleared && closedDoors){
-            if (leftDoor){anim = leftDoor.GetComponent<Animator>(); anim.SetBool("openDoors", true); leftDoor.transform.Find("Red").gameObject.SetActive(false);}
-            if (rightDoor){anim = rightDoor.GetComponent<Animator>(); anim.SetBool("openDoors", true); rightDoor.transform.Find("Red").gameObject.SetActive(false);}
-            if (topDoor){anim = topDoor.GetComponent<Animator>(); anim.SetBool("openDoors", true); topDoor.transform.Find("Red").gameObject.SetActive(false);}
-            if (bottomDoor){anim = bottomDoor.GetComponent<Animator>(); anim.SetBool("openDoors", true);}
+            if (leftDoor){anim = leftDoor.GetComponent<Animator>(); anim.SetBool("openDoors", true); leftDoor.transform.Find("Red").gameObject.SetActive(false); leftDoor.transform.Find("ClosedDoorCollider").gameObject.SetActive(false);}
+            if (rightDoor){anim = rightDoor.GetComponent<Animator>(); anim.SetBool("openDoors", true); rightDoor.transform.Find("Red").gameObject.SetActive(false); rightDoor.transform.Find("ClosedDoorCollider").gameObject.SetActive(false);}
+            if (topDoor){anim = topDoor.GetComponent<Animator>(); anim.SetBool("openDoors", true); topDoor.transform.Find("Red").gameObject.SetActive(false); topDoor.transform.Find("ClosedDoorCollider").gameObject.SetActive(false);}
+            if (bottomDoor){anim = bottomDoor.GetComponent<Animator>(); anim.SetBool("openDoors", true); bottomDoor.transform.Find("ClosedDoorCollider").gameObject.SetActive(false);}
             closedDoors = false;
         }
     }
