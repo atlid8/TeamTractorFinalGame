@@ -2547,11 +2547,6 @@ MonoBehaviour:
   m_AmplitudeGain: 0
   m_FrequencyGain: 5
   mNoiseOffsets: {x: 0, y: 0, z: 0}
---- !u!1 &1609391165 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2114736138107158022, guid: b270d842c4c797e47b68088792325177, type: 3}
-  m_PrefabInstance: {fileID: 2114736139404789450}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1666848661
 GameObject:
   m_ObjectHideFlags: 0
@@ -2717,10 +2712,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: room
-      value: 
-      objectReference: {fileID: 1609391165}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cbcdc651d6cf4cca85f1647ba1b02b1, type: 3}
 --- !u!1 &1913070483
@@ -3016,6 +3007,14 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1093554199}
+    - target: {fileID: 2114736137320642215, guid: b270d842c4c797e47b68088792325177, type: 3}
+      propertyPath: slowdownDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114736137320642215, guid: b270d842c4c797e47b68088792325177, type: 3}
+      propertyPath: endReachedDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2114736137604427360, guid: b270d842c4c797e47b68088792325177, type: 3}
       propertyPath: vcam
       value: 
