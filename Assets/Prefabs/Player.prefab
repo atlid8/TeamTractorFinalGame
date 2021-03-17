@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7531267813443111481}
   - component: {fileID: 7531267813443111482}
   - component: {fileID: 7531267813443111480}
-  - component: {fileID: 7531267813443111486}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -170,20 +169,6 @@ MonoBehaviour:
   characterAnimation: {fileID: 3730553070891315701}
   bulletRotation: {fileID: 7531267815089320912}
   bulletForce: 20
---- !u!114 &7531267813443111486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7531267813443111477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcf91010c42c35f489f2d6523b1eac8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHitPoints: 10
-  room: {fileID: 0}
 --- !u!1 &7531267813654549334
 GameObject:
   m_ObjectHideFlags: 0
