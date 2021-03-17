@@ -17,6 +17,7 @@ public class CharacterAnimation : MonoBehaviour
         gunPoint = weapon.transform.Find("GunPoint");
     }
 
+
     public Transform GetGunPoint()
     {
         return gunPoint;

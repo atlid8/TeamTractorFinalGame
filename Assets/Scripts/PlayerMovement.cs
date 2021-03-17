@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject playerArt;
     private CharacterAnimation playerArtScript;
     public Transform bulletRotation;
+    public Transform gunPoint;
     
     Vector2 movement;
     Vector2 mousePos;
@@ -37,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
         else 
             playerArtScript.SetRunningAnimation(false);
         rb.MovePosition(rb.position + movement * (moveSpeed * Time.fixedDeltaTime));
-        var lookDir = mousePos - rb.position;
+        var lookDir = mousePos - new Vector2(gunPoint.position.x, gunPoint.position.y);
         var angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
         playerArtScript.angle = angle;
         bulletRotation.eulerAngles = new Vector3(0, 0, angle);

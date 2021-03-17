@@ -371,7 +371,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1398685338184358206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,6 +389,7 @@ MonoBehaviour:
   cam: {fileID: 0}
   playerArt: {fileID: 1276771753010608333}
   bulletRotation: {fileID: 7160754692602852986}
+  gunPoint: {fileID: 0}
 --- !u!114 &6836836947806163550
 MonoBehaviour:
   m_ObjectHideFlags: 0
