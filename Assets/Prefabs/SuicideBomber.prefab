@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3056769734107697182}
   - component: {fileID: 3056769734107697180}
   - component: {fileID: 3056769734107697171}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyGFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 3056769734634714752}
   - component: {fileID: 3056769734634714758}
   - component: {fileID: 7474604203465010069}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SuicideBomber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,9 +231,9 @@ MonoBehaviour:
   targetCompatibility: {fileID: 0}
   maxAcceleration: 35
   rotationSpeed: 360
-  slowdownDistance: 1.07
-  pickNextWaypointDist: 1.27
-  endReachedDistance: 4
+  slowdownDistance: 4
+  pickNextWaypointDist: 4
+  endReachedDistance: 3
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
@@ -277,7 +277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3056769735177828058}
   - component: {fileID: 3056769735177828057}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
