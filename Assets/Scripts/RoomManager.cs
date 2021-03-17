@@ -44,7 +44,8 @@ public class RoomManager : MonoBehaviour
     void Update()
     {
         if (numberOfEnemies <= 0 && !cleared){
-            timeManager.stop = true;
+            if (timeManager)
+                timeManager.stop = true;
             cleared = true;
         }
         if (cleared && closedDoors){
