@@ -4,35 +4,32 @@ using UnityEngine;
 
 public class HitPointManager : MonoBehaviour
 {
-    public bool shakeScreen = false;
     public int currentHitPoints;
-    public GameObject camera;
-    private CameraShake cameraShake;
-    // Start is called before the first frame update
-    void Start()
-    {
-        cameraShake = camera.GetComponent<CameraShake>();
+
+    public GameObject room;
+    private RoomManager roomManager;
+
+    void Start(){
+        roomManager = room.GetComponent<RoomManager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void takeDamage(int damageAmount)
     {
         currentHitPoints -= damageAmount;
-        if (shakeScreen){
-            cameraShake.ShakeCamera();
-        }
         if (currentHitPoints <= 0)
         {
             if (transform.parent != null){
+                roomManager.killedEnemy();
                 Destroy(transform.parent.gameObject);
             }
             else{
+                roomManager.killedEnemy();
                 Destroy(gameObject);
             }
         }
+    }
+
+    public void destroyFromParent(){
+        roomManager.killedEnemy();
     }
 }

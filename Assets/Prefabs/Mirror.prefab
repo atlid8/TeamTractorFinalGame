@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8168327034752855929}
   - component: {fileID: 8168327034752855930}
   - component: {fileID: 8168327034752855934}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mirror
   m_TagString: Mirror
   m_Icon: {fileID: 0}
@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
+  reflects: 1
 --- !u!61 &8168327034752855934
 BoxCollider2D:
   m_ObjectHideFlags: 0

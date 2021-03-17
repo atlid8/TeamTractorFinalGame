@@ -13,6 +13,7 @@ public class BasicEnemy : MonoBehaviour
 
     public GameObject bullet;
     public Transform player;
+    
     // Start is called before the first frame update
     void Start()
     {
