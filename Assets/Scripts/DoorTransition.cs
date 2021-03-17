@@ -22,6 +22,7 @@ public class DoorTransition : MonoBehaviour
         CinemachineConfiner confiner = vcam.GetComponent<CinemachineConfiner>();
         if (other.gameObject.name == "Player"){
             other.transform.position = nextDoor.transform.position;
+            nextDoor.transform.parent.GetComponent<RoomManager>().setCurrentRoom();
             confiner.m_BoundingShape2D = newCollider;
             if (right) {other.transform.position += new Vector3(1, 0, 0);}
             if (left) {other.transform.position -= new Vector3(1, 0, 0);}

@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class RoomManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public bool cleared;
+    public bool current;
     public int numberOfEnemies;
     public GameObject timerCanvas;
     private TimeManager timeManager;
@@ -16,6 +18,7 @@ public class RoomManager : MonoBehaviour
     private GameObject leftDoor;
     private GameObject rightDoor;
     private Animator anim;
+
 
 
     
@@ -59,5 +62,23 @@ public class RoomManager : MonoBehaviour
 
     public void killedEnemy(){
         numberOfEnemies -= 1;
+    }
+
+    public void setCurrentRoom(){
+        if (!cleared){
+            Transform EnemiesObject = transform.Find("Enemies");
+            foreach (Transform enemy in EnemiesObject.transform)
+            {
+                
+                if (enemy.name == "SuicideBomber"){
+                    enemy.GetComponent<SuicideBomb>().activate();
+                }
+                else if (enemy.name == "AstarTestEnemy"){
+                    enemy.GetComponent<BasicEnemyShooting>().activate();
+                }
+                enemy.GetComponent<AIPath>().canMove = true;
+                enemy.GetComponent<AIPath>().canSearch = true;
+            }
+        }
     }
 }

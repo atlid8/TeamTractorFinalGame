@@ -26,4 +26,8 @@ public class SuicideBomb : MonoBehaviour
             bombTime -= Time.deltaTime;
         }
     }
+
+    public void activate(){
+        countdownStarted = true;
+    }
 }

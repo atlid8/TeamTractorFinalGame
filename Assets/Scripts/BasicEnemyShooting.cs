@@ -28,4 +28,7 @@ public class BasicEnemyShooting : MonoBehaviour
             timeBetweenShots -= Time.deltaTime;
         }
     }
+    public void activate(){
+        canShoot = true;
+    }
 }
