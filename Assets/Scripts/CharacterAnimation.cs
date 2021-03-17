@@ -53,13 +53,13 @@ public class CharacterAnimation : MonoBehaviour
     {
         float offset;
         if (facingRight)
-            offset = 85;
+            offset = 90;
         else
-            offset = -85;
+            offset = -90;
         var fAngle = angle + offset;
         if (facingRight)
             fAngle = -fAngle;
         var o = weapon.transform.eulerAngles;
-        weapon.transform.eulerAngles = new Vector3(o.x,o.y,fAngle);
+        weapon.transform.eulerAngles = new Vector3(0,o.y,fAngle);
     }
 }

@@ -38,9 +38,18 @@ public class PlayerMovement : MonoBehaviour
         else 
             playerArtScript.SetRunningAnimation(false);
         rb.MovePosition(rb.position + movement * (moveSpeed * Time.fixedDeltaTime));
-        var lookDir = mousePos - new Vector2(gunPoint.position.x, gunPoint.position.y);
+        Vector2 gunPointVector = new Vector2(gunPoint.position.x, gunPoint.position.y);
+        Vector2 rbVector = new Vector2(rb.position.x, rb.position.y);
+        var lookDir = mousePos - gunPointVector;
         var angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
-        playerArtScript.angle = angle;
         bulletRotation.eulerAngles = new Vector3(0, 0, angle);
+        if (Vector2.Distance(rbVector, mousePos) <= Vector2.Distance(gunPointVector, rbVector) + 0.2){
+            lookDir = mousePos - rbVector;
+            angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
+
+            Debug.Log("Rb");
+        }
+        playerArtScript.angle = angle;
+        
     }
 }
