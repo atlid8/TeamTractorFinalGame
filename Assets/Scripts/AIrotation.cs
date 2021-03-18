@@ -5,7 +5,8 @@ using UnityEngine;
 public class AIrotation : MonoBehaviour
 {
     public Transform player;
-    // Instantiate random number generator.  
+    // Instantiate random number generator.
+    private bool rotate;  
   
 // Generates a random number within a range.      
 
@@ -13,6 +14,8 @@ public class AIrotation : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player").transform;
+        rotate = transform.rotation.z <= 0;
+        Debug.Log(rotate);
     }
 
     // Update is called once per frame
@@ -22,5 +25,14 @@ public class AIrotation : MonoBehaviour
         var direction = player.position - current;
         var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        Debug.Log(transform.localRotation.eulerAngles.z);
+        if(transform.rotation.eulerAngles.z > 180 && rotate){
+            transform.GetChild(0).transform.localRotation *= Quaternion.Euler(0, 180, 0);
+            rotate = false;
+        }
+        if (transform.rotation.eulerAngles.z < 180 && !rotate){
+            transform.GetChild(0).transform.localRotation *= Quaternion.Euler(0, 180, 0);
+            rotate = true;
+        }
     }
 }
