@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Cinemachine;
 
 public class DoorTransition : MonoBehaviour
@@ -12,6 +13,8 @@ public class DoorTransition : MonoBehaviour
     public PolygonCollider2D newCollider;
 
     public GameObject nextDoor;
+
+    public Image miniMapTile;
 
     public bool up;
     public bool down;
@@ -28,6 +31,7 @@ public class DoorTransition : MonoBehaviour
             if (left) {other.transform.position -= new Vector3(1, 0, 0);}
             if (up) {other.transform.position += new Vector3(0, 2, 0);}
             if (down) {other.transform.position -= new Vector3(0, 3, 0);}
+            if (miniMapTile) {miniMapTile.color = new Color(255, 255, 255, 255);}
         }
     }
 }
