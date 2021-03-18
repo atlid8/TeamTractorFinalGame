@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1002347841912330779}
   - component: {fileID: 6277323984257009786}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Character_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1002347841912330779
 Transform:
@@ -92,12 +92,12 @@ GameObject:
   m_Component:
   - component: {fileID: 618654033862733346}
   - component: {fileID: 4631366152226061809}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Shotgun_Arms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &618654033862733346
 Transform:
@@ -175,12 +175,12 @@ GameObject:
   - component: {fileID: 93198398156646631}
   - component: {fileID: 8695303902317365621}
   - component: {fileID: 1042812506359350603}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &93198398156646631
 Transform:
@@ -276,12 +276,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4800371141615348422}
   - component: {fileID: 9179575237082451323}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4800371141615348422
 Transform:
@@ -291,7 +291,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276771753010608333}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.12, y: -0.94, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1076523862375132751}
@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 6836836947806163550}
   - component: {fileID: 1938887641653894628}
   - component: {fileID: 5185023098939791776}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ Transform:
   m_GameObject: {fileID: 1938887641653894636}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children:
   - {fileID: 5856222004490171443}
   - {fileID: 4800371141615348422}
@@ -389,7 +389,7 @@ MonoBehaviour:
   cam: {fileID: 0}
   playerArt: {fileID: 1276771753010608333}
   bulletRotation: {fileID: 7160754692602852986}
-  gunPoint: {fileID: 0}
+  gunPoint: {fileID: 1594069789853531392}
 --- !u!114 &6836836947806163550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,12 +447,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1594069789853531392}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GunPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1594069789853531392
 Transform:
@@ -478,7 +478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5856222004490171443}
   - component: {fileID: 1349869596153275607}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -560,12 +560,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2745214195662464081}
   - component: {fileID: 6169263789081088952}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Character_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2745214195662464081
 Transform:
@@ -641,12 +641,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1644886077086773295}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ShotgunWeap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1644886077086773295
 Transform:
@@ -673,12 +673,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1076523862375132751}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1076523862375132751
 Transform:
@@ -706,12 +706,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1697644527194557221}
   - component: {fileID: 1908826789071842131}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Shotgun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1697644527194557221
 Transform:
@@ -787,7 +787,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7160754692602852986}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletRotation
   m_TagString: Untagged
   m_Icon: {fileID: 0}

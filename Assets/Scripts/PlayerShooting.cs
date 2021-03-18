@@ -8,7 +8,7 @@ public class PlayerShooting : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject characterAnimation;
     
-    private Transform gunPoint;
+    public Transform gunPoint;
     public Transform bulletRotation;
 
 
@@ -16,7 +16,7 @@ public class PlayerShooting : MonoBehaviour
 
     private void Awake()
     {
-        gunPoint = characterAnimation.GetComponent<CharacterAnimation>().GetGunPoint();
+    
     }
 
     // Update is called once per frame
@@ -25,10 +25,14 @@ public class PlayerShooting : MonoBehaviour
         if(Input.GetButtonDown("Fire1") || Input.GetButtonDown("Jump"))
         {
             Shoot();
+            Debug.Log("Click to shoot!");
         }
     }
 
     void Shoot(){
+        Debug.Log(bulletPrefab);
+        Debug.Log(gunPoint);
+        Debug.Log(bulletRotation);
         GameObject bullet = Instantiate(bulletPrefab, gunPoint.position, bulletRotation.rotation);
         bullet.GetComponent<BulletScript>().setBulletShooter(gameObject);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();

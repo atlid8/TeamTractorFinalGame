@@ -124,8 +124,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcf91010c42c35f489f2d6523b1eac8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHitPoints: 10
+  maxHitpoints: 0
+  currentHitPoints: 7
   room: {fileID: 0}
+  healthBar: {fileID: 0}
 --- !u!114 &1196513449357045565
 MonoBehaviour:
   m_ObjectHideFlags: 0
