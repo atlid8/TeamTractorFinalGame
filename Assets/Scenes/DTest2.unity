@@ -3981,11 +3981,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!4 &323141858 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1594069789853531392, guid: 5cbcdc651d6cf4cca85f1647ba1b02b1, type: 3}
-  m_PrefabInstance: {fileID: 1938887642741640700}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &328134111
 GameObject:
   m_ObjectHideFlags: 0
@@ -9586,10 +9581,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 6836836947806163550, guid: 5cbcdc651d6cf4cca85f1647ba1b02b1, type: 3}
-      propertyPath: gunPoint
-      value: 
-      objectReference: {fileID: 323141858}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cbcdc651d6cf4cca85f1647ba1b02b1, type: 3}
 --- !u!1001 &2114736139404789450
