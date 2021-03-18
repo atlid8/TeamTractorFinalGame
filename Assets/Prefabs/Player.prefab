@@ -404,6 +404,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 7754768123783791977, guid: c2df36afde51de04f9c2a7bb41b6fba2, type: 3}
   characterAnimation: {fileID: 1276771753010608333}
+  gunPoint: {fileID: 1594069789853531392}
   bulletRotation: {fileID: 7160754692602852986}
   bulletForce: 20
 --- !u!114 &1938887641653894628
