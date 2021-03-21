@@ -12,6 +12,8 @@ public class HitPointManager : MonoBehaviour
 
 
     void Start(){
+        if (!room){room = transform.parent.parent.parent.gameObject;}
+        maxHitpoints = currentHitPoints;
         roomManager = room.GetComponent<RoomManager>();
         healthBar.SetHealth(currentHitPoints, maxHitpoints);
     }
@@ -19,7 +21,7 @@ public class HitPointManager : MonoBehaviour
     public void takeDamage(int damageAmount)
     {
         currentHitPoints -= damageAmount;
-        healthBar.SetHealth(currentHitPoints, maxHitpoints);
+        if (healthBar) {healthBar.SetHealth(currentHitPoints, maxHitpoints);}
         if (currentHitPoints <= 0)
         {
             if (transform.parent != null){
