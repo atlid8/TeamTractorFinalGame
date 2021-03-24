@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Hit Effect.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Hit Effect0000" x="2" y="2" width="71" height="181" pivotX="1246.85" pivotY="515.95" frameX="-1256" frameY="-453" frameWidth="1327" frameHeight="1046"/>
+	<SubTexture name="Hit Effect0001" x="75" y="2" width="566" height="820" frameX="-760" frameY="-124" frameWidth="1327" frameHeight="1046"/>
+	<SubTexture name="Hit Effect0002" x="643" y="2" width="1321" height="1046" frameX="-6" frameY="0" frameWidth="1327" frameHeight="1046"/>
+	<SubTexture name="Hit Effect0003" x="2" y="1050" width="144" height="32" frameX="0" frameY="-473" frameWidth="1327" frameHeight="1046"/>
+</TextureAtlas>
