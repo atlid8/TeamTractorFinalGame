@@ -118,10 +118,10 @@ TextureImporter:
       name: Stair-472_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 472
-        width: 472
-        height: 472
+        x: 53
+        y: 471
+        width: 367
+        height: 204
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,10 +139,10 @@ TextureImporter:
       name: Stair-472_1
       rect:
         serializedVersion: 2
-        x: 472
-        y: 472
-        width: 472
-        height: 472
+        x: 526
+        y: 471
+        width: 367
+        height: 204
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,10 +160,10 @@ TextureImporter:
       name: Stair-472_2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 53
         y: 0
-        width: 472
-        height: 472
+        width: 367
+        height: 203
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +181,10 @@ TextureImporter:
       name: Stair-472_3
       rect:
         serializedVersion: 2
-        x: 472
+        x: 526
         y: 0
-        width: 472
-        height: 472
+        width: 367
+        height: 203
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
