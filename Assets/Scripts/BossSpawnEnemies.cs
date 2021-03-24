@@ -23,7 +23,6 @@ public class BossSpawnEnemies : MonoBehaviour
         GameObject enemy = Instantiate(enemyPrefab, spawns[spawnIndex].position, enemyPrefab.transform.rotation);
         enemy.transform.parent = enemyParentComponent.transform;
         if (enemy.name == "SuicideBomber(Clone)"){
-            Debug.Log("activate suicide");
             enemy.GetComponent<SuicideBomb>().activate();
             }
         else if (enemy.name == "AstarTestEnemy"){
