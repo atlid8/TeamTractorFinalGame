@@ -23,7 +23,6 @@ public class explosionScript : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other) {
             
          // get the point of contact
-         Debug.Log("explosioncollision");
         GameObject colliderObject = other.gameObject;
         if(colliderObject.GetComponent<PlayerHPManager>() != null)
         {
