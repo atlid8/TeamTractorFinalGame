@@ -21,6 +21,8 @@ public class EnemyHealthBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        slider.transform.position = Camera.main.WorldToScreenPoint(transform.parent.position + Offset);
+        if (gameObject.transform.parent.name != "Boss"){
+            slider.transform.position = Camera.main.WorldToScreenPoint(transform.parent.position + Offset);
+        }
     }
 }
