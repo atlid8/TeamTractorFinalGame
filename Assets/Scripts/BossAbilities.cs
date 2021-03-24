@@ -6,6 +6,7 @@ public class BossAbilities : MonoBehaviour
 {
     public GameObject bulletPrefab;
     private BasicEnemyShooting shooting;
+    private bool active = false;
 
     private int numberOfProjectiles = 20;
     private float startTimeBetweenCircleAttack = 15f;
@@ -22,15 +23,17 @@ public class BossAbilities : MonoBehaviour
     }
 
     void Update() {
-        timeBetweenRapidFire -= Time.deltaTime;
-        timeBetweenCircleAttack -= Time.deltaTime;
-        if (timeBetweenCircleAttack <= 0){
-            circleAttack();
-            timeBetweenCircleAttack = startTimeBetweenCircleAttack;
-        }
-        if (timeBetweenRapidFire <= 0){
-            StartCoroutine(rapidFire());
-            timeBetweenRapidFire = starttimeBetweenRapidFire;
+        if (active){
+            timeBetweenRapidFire -= Time.deltaTime;
+            timeBetweenCircleAttack -= Time.deltaTime;
+            if (timeBetweenCircleAttack <= 0){
+                circleAttack();
+                timeBetweenCircleAttack = startTimeBetweenCircleAttack;
+            }
+            if (timeBetweenRapidFire <= 0){
+                StartCoroutine(rapidFire());
+                timeBetweenRapidFire = starttimeBetweenRapidFire;
+            }
         }
     }
     
@@ -53,6 +56,10 @@ public class BossAbilities : MonoBehaviour
 
             angle += angleStep;
         }
+    }
+
+    public void activate(){
+        active = true;
     }
 
     IEnumerator rapidFire(){

@@ -11,7 +11,7 @@ public class BossSpawnEnemies : MonoBehaviour
     private int spawnIndex;
     private int count;
     // Start is called before the first frame update
-    void Start()
+    public void activate()
     {
         count = spawns.Length;
         InvokeRepeating("spawnEnemys", 1, 5);
