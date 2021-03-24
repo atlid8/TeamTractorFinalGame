@@ -8259,6 +8259,7 @@ MonoBehaviour:
   maxHitpoints: 100
   currentHitPoints: 100
   room: {fileID: 673226116}
+  nextLeveLStairs: {fileID: 7948652352463340234, guid: ce129f5d435e640c9bf399e33a542a5b, type: 3}
   healthBar: {fileID: 1129441599}
 --- !u!1 &1534278104
 GameObject:

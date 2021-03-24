@@ -7,6 +7,7 @@ public class HitPointManager : MonoBehaviour
     public int maxHitpoints;
     public int currentHitPoints;
     public GameObject room;
+    public GameObject nextLeveLStairs;
     public EnemyHealthBar healthBar;
     private RoomManager roomManager;
 
@@ -25,6 +26,11 @@ public class HitPointManager : MonoBehaviour
         if (currentHitPoints <= 0)
         {
             if (transform.parent != null){
+                if (transform.parent.gameObject.name == "Boss" && nextLeveLStairs){
+                    var stairs = Instantiate(nextLeveLStairs, transform.parent.transform.position, new Quaternion(0, 0, 0, 0));
+                    stairs.GetComponent<StairSceneTransition>().currentScene = 0;
+                    stairs.GetComponent<StairSceneTransition>().nextScene = 1;
+                }
                 roomManager.killedEnemy();
                 Destroy(transform.parent.gameObject);
             }
