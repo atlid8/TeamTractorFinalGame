@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -554,8 +554,8 @@ MonoBehaviour:
   radius: 2
   height: 2
   repathRate: 0.1
-  canSearch: 1
-  canMove: 1
+  canSearch: 0
+  canMove: 0
   maxSpeed: 15
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
@@ -600,7 +600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a5d4f2a59a41449a2d4535c041112d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countdownStarted: 1
+  countdownStarted: 0
   bombTime: 5
   explosionPrefab: {fileID: 1410045518754484711, guid: 5a3c0775f13b86f439b50daee1cd10f5, type: 3}
 --- !u!1 &7337899637899498717

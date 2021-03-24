@@ -15,6 +15,7 @@ public class RoomManager : MonoBehaviour
     public bool rightDoorOpens;
     public bool topDoorOpens;
     public bool bottomDoorOpens;
+    public bool bossFight;
     private TimeManager timeManager;
 
 
@@ -67,7 +68,9 @@ public class RoomManager : MonoBehaviour
     }
 
     public void killedEnemy(){
-        numberOfEnemies -= 1;
+        if (!bossFight){
+            numberOfEnemies -= 1;
+        }
     }
 
     public void setCurrentRoom(){
@@ -85,8 +88,15 @@ public class RoomManager : MonoBehaviour
                 else if (enemy.name == "AstarTestEnemy"){
                     enemy.GetComponent<BasicEnemyShooting>().activate();
                 }
-                enemy.GetComponent<AIPath>().canMove = true;
-                enemy.GetComponent<AIPath>().canSearch = true;
+                else if (enemy.name == "Boss"){
+                    enemy.GetComponent<BasicEnemyShooting>().activate();
+                    enemy.GetComponent<BossSpawnEnemies>().activate();
+                    enemy.GetComponent<BossAbilities>().activate();
+                }
+                if (enemy.name != "Boss"){
+                    enemy.GetComponent<AIPath>().canMove = true;
+                    enemy.GetComponent<AIPath>().canSearch = true;
+                }
             }
         }
     }

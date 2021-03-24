@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class BossSpawnEnemies : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class BossSpawnEnemies : MonoBehaviour
     private int spawnIndex;
     private int count;
     // Start is called before the first frame update
-    void Start()
+    public void activate()
     {
         count = spawns.Length;
         InvokeRepeating("spawnEnemys", 1, 5);
@@ -21,6 +22,14 @@ public class BossSpawnEnemies : MonoBehaviour
          
         GameObject enemy = Instantiate(enemyPrefab, spawns[spawnIndex].position, enemyPrefab.transform.rotation);
         enemy.transform.parent = enemyParentComponent.transform;
+        if (enemy.name == "SuicideBomber(Clone)"){
+            enemy.GetComponent<SuicideBomb>().activate();
+            }
+        else if (enemy.name == "AstarTestEnemy"){
+            enemy.GetComponent<BasicEnemyShooting>().activate();
+            }
+        enemy.GetComponent<AIPath>().canMove = true;
+        enemy.GetComponent<AIPath>().canSearch = true;
     }
 
     // Update is called once per frame

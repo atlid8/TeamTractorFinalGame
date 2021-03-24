@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DTest2.unity
     guid: c9c4fe6e461674b428ae2d3d5dedb6bc
+  - enabled: 1
+    path: Assets/Scenes/TestLeveL2.unity
+    guid: eba06d03abf964248a21aaedeaf5c20e
   m_configObjects: {}
