@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using TMPro;
 
 public class RoomManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class RoomManager : MonoBehaviour
     public bool current;
     public int numberOfEnemies;
     public GameObject timerCanvas;
+    public TextMeshProUGUI timerVisualIndicator;
     public bool leftDoorOpens;
     public bool rightDoorOpens;
     public bool topDoorOpens;
@@ -77,6 +79,7 @@ public class RoomManager : MonoBehaviour
         current = true;
         if (!cleared){
             timeManager.seconds += roomTime;
+            if (timerVisualIndicator){StartCoroutine(indicateTime());}
             timeManager.stop = false;
             Transform EnemiesObject = transform.Find("Enemies");
             foreach (Transform enemy in EnemiesObject.transform)
@@ -99,5 +102,14 @@ public class RoomManager : MonoBehaviour
                 }
             }
         }
+    }
+    IEnumerator indicateTime(){
+        timerVisualIndicator.color = new Color32(0, 0, 200, 255);
+        timerVisualIndicator.text = "+ " + roomTime;
+        timerCanvas.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color = new Color32(0, 0, 200, 255);
+        yield return new WaitForSeconds(0.5f);
+        timerCanvas.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color = new Color32(255, 255, 255, 255);
+        timerVisualIndicator.color = new Color32(255, 255, 255, 255);
+        timerVisualIndicator.text = "";
     }
 }
