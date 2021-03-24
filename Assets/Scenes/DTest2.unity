@@ -11020,10 +11020,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1280007112}
     m_Modifications:
-    - target: {fileID: 1783766852, guid: e7ce02c69b55f5b47a16014452a3f70f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3056769734107697171, guid: e7ce02c69b55f5b47a16014452a3f70f, type: 3}
       propertyPath: room
       value: 
