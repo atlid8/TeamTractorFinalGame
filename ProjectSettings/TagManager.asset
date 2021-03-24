@@ -40,9 +40,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Tilemap
+    uniqueID: 2422902725
+    locked: 0
+  - name: Doors
+    uniqueID: 490151801
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: New Layer
-    uniqueID: 2422902725
+  - name: TilemapBottom
+    uniqueID: 4184543277
+    locked: 0
+  - name: DoorsBottom
+    uniqueID: 948235107
     locked: 0
