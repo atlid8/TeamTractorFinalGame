@@ -27,7 +27,7 @@ public class TimeManager : MonoBehaviour
                     SceneManager.LoadScene(0);
                 }
             }    
-        if (!stop){miliseconds -= Time.deltaTime * 100;}
+        if (!stop){miliseconds -= (Time.deltaTime * 100) * GameManager.instance.globalTimeMult;}
              
         //Debug.Log(string.Format("{0}:{1}:{2}", minutes, seconds, (int)miliseconds));
         timerDisplay.text = string.Format("{0}:{1}", seconds, (int)miliseconds);

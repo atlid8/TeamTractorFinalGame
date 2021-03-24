@@ -20,9 +20,10 @@ public class SuicideBomb : MonoBehaviour
             GameObject explosion = Instantiate(explosionPrefab, this.transform.position, this.transform.rotation);
             transform.GetChild(0).GetComponent<HitPointManager>().destroyFromParent();
             Destroy(gameObject);
+            
         }
         else if (countdownStarted){
-            bombTime -= Time.deltaTime;
+            bombTime -= Time.deltaTime * GameManager.instance.globalTimeMult;
         }
     }
 

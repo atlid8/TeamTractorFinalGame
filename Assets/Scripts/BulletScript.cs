@@ -9,7 +9,8 @@ public class BulletScript : MonoBehaviour
 
     GameObject shooter;
     public GameObject hitEffect;
-
+    public bool playerBullet = false;
+    
     private void Awake()
     {
         Destroy(gameObject, lifeTime);

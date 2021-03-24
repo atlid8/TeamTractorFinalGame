@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
@@ -15,10 +16,28 @@ public class Commons
         yield return new WaitForEndOfFrame();
         lambda.Invoke();
     }
+
+    public static IEnumerator DoForSeconds(UnityAction lambda, float seconds)
+    {
+        for (var i = seconds; i > 0; i -= Time.deltaTime)
+        {
+            lambda.Invoke();
+            yield return null;
+        }
+    }
+
+    public static IEnumerator DoUntil(UnityAction lambda, Func<bool> condition, UnityAction end = null)
+    {
+        while (!condition.Invoke())
+        {
+            lambda.Invoke();
+            yield return null;
+        }
+        end?.Invoke();
+    }
     
     public static IEnumerator FadeAway(SpriteRenderer img, float length)
     {
-        // loop over 1 second backwards
         for (var i = 1f; i >= 0; i -= Time.deltaTime / length)
         {
             // set color with i as alpha

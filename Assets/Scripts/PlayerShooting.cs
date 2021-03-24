@@ -36,8 +36,16 @@ public class PlayerShooting : MonoBehaviour
         var muzzle = Instantiate(muzzleFlash, position, rotation);
         StartCoroutine(Commons.FadeAway(muzzle.GetComponentInChildren<SpriteRenderer>(), 0.06f));
         StartCoroutine(Commons.DelayedAction(() => Destroy(muzzle), 0.1f));
-        bullet.GetComponent<BulletScript>().setBulletShooter(gameObject);
+        var bulletScript = bullet.GetComponent<BulletScript>(); 
+        bulletScript.setBulletShooter(gameObject);
+        bulletScript.playerBullet = true;
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(bulletRotation.up * bulletForce, ForceMode2D.Impulse);
+        
+        GameManager.instance.AddTimeEffect(true);
+        StartCoroutine(Commons.DelayedAction(() =>
+        {
+            GameManager.instance.AddTimeEffect(false);
+        }, 5f));
     }
 }

@@ -24,6 +24,7 @@ public class AIrotation : MonoBehaviour
         var direction = player.position - current;
         var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        
         if(transform.rotation.eulerAngles.z > 180 && rotate){
             transform.GetChild(0).transform.localRotation *= Quaternion.Euler(0, 180, 0);
             rotate = false;
