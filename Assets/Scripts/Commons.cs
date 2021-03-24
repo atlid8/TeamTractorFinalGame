@@ -26,5 +26,7 @@ public class Commons
             img.color = new Color(o.r, o.g, o.b, i);
             yield return null;
         }
+
+        img.enabled = false;
     }
 }
