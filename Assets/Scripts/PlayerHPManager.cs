@@ -8,6 +8,7 @@ public class PlayerHPManager : MonoBehaviour
     public bool shakeScreen = false;
     public GameObject timerCanvas;
     public TextMeshProUGUI timerDisplay;
+    public TextMeshProUGUI timerVisualIndicator;
     private TimeManager timeManager;
     public GameObject camera;
     private CameraShake cameraShake;
@@ -27,7 +28,7 @@ public class PlayerHPManager : MonoBehaviour
     {
         timeManager.seconds -= damageAmount;
         if (timeManager.seconds >= 1){
-            StartCoroutine(DamageText());
+            StartCoroutine(DamageText(damageAmount));
         }
         else {
             timeManager.seconds = 0;
@@ -43,10 +44,14 @@ public class PlayerHPManager : MonoBehaviour
         }
     }
 
-    IEnumerator DamageText()
+    IEnumerator DamageText(int damageAmount)
     {
         timerDisplay.color = new Color32(255, 0, 0, 255);
-        yield return new WaitForSecondsRealtime(0.25f);
+        timerVisualIndicator.color = new Color32(255, 0, 0, 255);
+        timerVisualIndicator.text = "- " + damageAmount;
+        yield return new WaitForSecondsRealtime(0.5f);
+        timerVisualIndicator.text = "";
+        timerVisualIndicator.color = new Color32(255, 0, 0, 255);
         timerDisplay.color = new Color32(255, 255, 255, 255);
     }
 
