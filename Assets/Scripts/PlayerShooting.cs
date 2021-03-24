@@ -41,11 +41,11 @@ public class PlayerShooting : MonoBehaviour
         bulletScript.playerBullet = true;
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(bulletRotation.up * bulletForce, ForceMode2D.Impulse);
-        
+        /*
         GameManager.instance.AddTimeEffect(true);
         StartCoroutine(Commons.DelayedAction(() =>
         {
             GameManager.instance.AddTimeEffect(false);
-        }, 5f));
+        }, 5f));*/
     }
 }
