@@ -11,8 +11,6 @@ public class SuicideBomb : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.GetComponent<Pathfinding.AIPath>().canMove = true;
-        gameObject.GetComponent<Pathfinding.AIPath>().canSearch = true;
     }
 
     // Update is called once per frame
