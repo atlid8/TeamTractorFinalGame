@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 53a0240f6ac42496ba865a8b27045191
+guid: 0595fbae858c1401d9a4e45abfe6b170
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -118,8 +118,8 @@ TextureImporter:
       name: Floors-472_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 472
+        x: 237
+        y: 1179
         width: 472
         height: 472
       alignment: 0
@@ -139,8 +139,8 @@ TextureImporter:
       name: Floors-472_1
       rect:
         serializedVersion: 2
-        x: 472
-        y: 472
+        x: 1181
+        y: 1179
         width: 472
         height: 472
       alignment: 0
@@ -160,8 +160,8 @@ TextureImporter:
       name: Floors-472_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 236
+        y: 234
         width: 472
         height: 472
       alignment: 0
@@ -181,8 +181,8 @@ TextureImporter:
       name: Floors-472_3
       rect:
         serializedVersion: 2
-        x: 472
-        y: 0
+        x: 1181
+        y: 235
         width: 472
         height: 472
       alignment: 0
