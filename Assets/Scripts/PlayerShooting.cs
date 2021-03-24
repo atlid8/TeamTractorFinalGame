@@ -11,12 +11,13 @@ public class PlayerShooting : MonoBehaviour
     public Transform gunPoint;
     public Transform bulletRotation;
 
+    public GameObject muzzleFlash;
 
     public float bulletForce = 20f;
 
     private void Awake()
     {
-    
+        
     }
 
     // Update is called once per frame
@@ -25,15 +26,16 @@ public class PlayerShooting : MonoBehaviour
         if(Input.GetButtonDown("Fire1") || Input.GetButtonDown("Jump"))
         {
             Shoot();
-            Debug.Log("Click to shoot!");
         }
     }
 
-    void Shoot(){
-        Debug.Log(bulletPrefab);
-        Debug.Log(gunPoint);
-        Debug.Log(bulletRotation);
-        GameObject bullet = Instantiate(bulletPrefab, gunPoint.position, bulletRotation.rotation);
+    void Shoot() {
+        var position = gunPoint.position;
+        var rotation = bulletRotation.rotation;
+        GameObject bullet = Instantiate(bulletPrefab, position, rotation);
+        var muzzle = Instantiate(muzzleFlash, position, rotation);
+        StartCoroutine(Commons.FadeAway(muzzle.GetComponentInChildren<SpriteRenderer>(), 0.06f));
+        StartCoroutine(Commons.DelayedAction(() => Destroy(muzzle), 0.1f));
         bullet.GetComponent<BulletScript>().setBulletShooter(gameObject);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(bulletRotation.up * bulletForce, ForceMode2D.Impulse);
