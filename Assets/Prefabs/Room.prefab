@@ -707,7 +707,7 @@ MonoBehaviour:
   roomTime: 10
   cleared: 0
   current: 0
-  numberOfEnemies: 2
+  numberOfEnemies: 0
   timerCanvas: {fileID: 0}
   timerVisualIndicator: {fileID: 0}
   leftDoorOpens: 0

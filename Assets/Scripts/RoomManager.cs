@@ -10,7 +10,7 @@ public class RoomManager : MonoBehaviour
     public float roomTime;
     public bool cleared;
     public bool current;
-    public int numberOfEnemies;
+    public int numberOfEnemies = 0;
     public GameObject timerCanvas;
     public TextMeshProUGUI timerVisualIndicator;
     public bool leftDoorOpens;
@@ -33,9 +33,16 @@ public class RoomManager : MonoBehaviour
     
     void Start()
     {
+        timerCanvas = GameObject.Find("TimerCanvas");
+        timerVisualIndicator = timerCanvas.GetComponentInChildren<TextMeshProUGUI>();
         timeManager = timerCanvas.GetComponent<TimeManager>();
         cleared = false;
         closedDoors = true;
+        if (numberOfEnemies == 0){
+            foreach (Transform enemy in transform.Find("Enemies")){
+                numberOfEnemies += 1;
+            }
+        }
         foreach (Transform child in transform){
             if (child.name == "TopDoor"){
                 topDoor = child.gameObject;

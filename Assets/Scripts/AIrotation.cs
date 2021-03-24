@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AIrotation : MonoBehaviour
 {
-    public Transform player;
+    private Transform player;
     // Instantiate random number generator.
     private bool rotate;  
   
