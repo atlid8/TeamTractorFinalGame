@@ -26,7 +26,7 @@ public class PlayerShooting : MonoBehaviour
     void Update()
     {
         if(canFire <= 0) {
-            if(Input.GetButton("Fire1") || Input.GetButtonDown("Jump"))
+            if(Input.GetButton("Fire1") || Input.GetButton("Jump"))
             {
                 Shoot();
                 canFire = fireSpeed;
