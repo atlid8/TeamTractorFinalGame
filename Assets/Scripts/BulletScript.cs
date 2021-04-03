@@ -27,11 +27,13 @@ public class BulletScript : MonoBehaviour
     }
 
     private Vector2 oldVelocity;
+    private SpriteRenderer spriteR;
 
     void FixedUpdate()
     {
         // because we want the velocity after physics, we put this in fixed update
         oldVelocity = GetComponent<Rigidbody2D>().velocity;
+        spriteR = GetComponent<SpriteRenderer>();
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -40,6 +42,8 @@ public class BulletScript : MonoBehaviour
         GameObject colliderObject = other.gameObject;
         if (colliderObject.tag == "Mirror")
         {
+            spriteR.color = Color.cyan;
+            gameObject.transform.localScale = new Vector3(0.8f, 0.8f, 0);
             ContactPoint2D contact = other.GetContact(0);
 
             // reflect our old velocity off the contact point's normal vector
