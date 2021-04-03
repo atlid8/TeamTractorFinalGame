@@ -2021,6 +2021,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2114736138107158020, guid: 9dadda96f31ad4c2da17a03156444d6e, type: 3}
+      propertyPath: timerCanvas
+      value: 
+      objectReference: {fileID: 2119651459}
+    - target: {fileID: 2114736138107158020, guid: 9dadda96f31ad4c2da17a03156444d6e, type: 3}
       propertyPath: topDoorOpens
       value: 1
       objectReference: {fileID: 0}
@@ -2036,6 +2040,10 @@ PrefabInstance:
       propertyPath: bottomDoorOpens
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2114736138107158020, guid: 9dadda96f31ad4c2da17a03156444d6e, type: 3}
+      propertyPath: timerVisualIndicator
+      value: 
+      objectReference: {fileID: 1602089612}
     - target: {fileID: 2114736138107158022, guid: 9dadda96f31ad4c2da17a03156444d6e, type: 3}
       propertyPath: m_Name
       value: Room1

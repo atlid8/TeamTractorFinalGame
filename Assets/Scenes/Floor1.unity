@@ -648,7 +648,7 @@ PrefabInstance:
     - target: {fileID: 2114736138107158020, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
       propertyPath: timerCanvas
       value: 
-      objectReference: {fileID: 2114162116}
+      objectReference: {fileID: 526331072}
     - target: {fileID: 2114736138107158020, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
       propertyPath: leftDoorOpens
       value: 0
@@ -1731,7 +1731,7 @@ PrefabInstance:
     - target: {fileID: 2114736138107158020, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
       propertyPath: timerCanvas
       value: 
-      objectReference: {fileID: 2114162116}
+      objectReference: {fileID: 526331072}
     - target: {fileID: 2114736138107158020, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
       propertyPath: leftDoorOpens
       value: 1
@@ -2378,7 +2378,7 @@ PrefabInstance:
     - target: {fileID: 2114736138107158020, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
       propertyPath: timerCanvas
       value: 
-      objectReference: {fileID: 2114162116}
+      objectReference: {fileID: 526331072}
     - target: {fileID: 2114736138107158020, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
       propertyPath: topDoorOpens
       value: 1
@@ -3757,7 +3757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3056769734634714753, guid: 0ab9377f080cbe5409ad8518eb463195, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3056769734634714753, guid: 0ab9377f080cbe5409ad8518eb463195, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3973,7 +3973,7 @@ PrefabInstance:
     - target: {fileID: 2114736138107158020, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
       propertyPath: timerCanvas
       value: 
-      objectReference: {fileID: 2114162116}
+      objectReference: {fileID: 526331072}
     - target: {fileID: 2114736138107158020, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
       propertyPath: topDoorOpens
       value: 1
@@ -4490,7 +4490,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7337899637367452228, guid: 46803d092a57642189c49201c11484ea, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7337899637367452228, guid: 46803d092a57642189c49201c11484ea, type: 3}
       propertyPath: m_LocalPosition.x
