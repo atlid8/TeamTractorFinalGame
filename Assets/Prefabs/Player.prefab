@@ -408,6 +408,7 @@ MonoBehaviour:
   bulletRotation: {fileID: 7160754692602852986}
   muzzleFlash: {fileID: 0}
   bulletForce: 20
+  fireSpeed: 0.25
 --- !u!114 &1938887641653894628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -423,6 +424,7 @@ MonoBehaviour:
   shakeScreen: 1
   timerCanvas: {fileID: 0}
   timerDisplay: {fileID: 0}
+  timerVisualIndicator: {fileID: 0}
   camera: {fileID: 0}
 --- !u!61 &4682878257004899664
 BoxCollider2D:
