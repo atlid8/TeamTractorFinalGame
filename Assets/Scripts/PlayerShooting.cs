@@ -14,18 +14,26 @@ public class PlayerShooting : MonoBehaviour
     public GameObject muzzleFlash;
 
     public float bulletForce = 20f;
+    public float fireSpeed = 1;
+    private float canFire;
 
     private void Awake()
     {
-        
+        canFire = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire1") || Input.GetButtonDown("Jump"))
-        {
-            Shoot();
+        if(canFire <= 0) {
+            if(Input.GetButton("Fire1") || Input.GetButtonDown("Jump"))
+            {
+                Shoot();
+                canFire = fireSpeed;
+            }
+        }
+        else {
+            canFire -= Time.deltaTime;
         }
     }
 
