@@ -26,7 +26,7 @@ public class HitPointManager : MonoBehaviour
         if (currentHitPoints <= 0)
         {
             if (transform.parent != null){
-                if (transform.parent.gameObject.name == "Boss" && nextLeveLStairs){
+                if (transform.parent.gameObject.name == "Boss" || transform.parent.gameObject.name == "Boss2" && nextLeveLStairs){
                     var stairs = Instantiate(nextLeveLStairs, transform.parent.transform.position, new Quaternion(0, 0, 0, 0));
                     roomManager.killedBoss();
                 }
