@@ -28,8 +28,6 @@ public class HitPointManager : MonoBehaviour
             if (transform.parent != null){
                 if (transform.parent.gameObject.name == "Boss" && nextLeveLStairs){
                     var stairs = Instantiate(nextLeveLStairs, transform.parent.transform.position, new Quaternion(0, 0, 0, 0));
-                    stairs.GetComponent<StairSceneTransition>().currentScene = 0;
-                    stairs.GetComponent<StairSceneTransition>().nextScene = 1;
                 }
                 roomManager.killedEnemy();
                 Destroy(transform.parent.gameObject);

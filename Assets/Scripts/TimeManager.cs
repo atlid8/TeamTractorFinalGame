@@ -10,8 +10,12 @@ public class TimeManager : MonoBehaviour
     public TextMeshProUGUI timerDisplay;
     public float seconds = 10;
     public float miliseconds = 0;   
-
     public bool stop = false;
+    public int level;
+
+    void Start() {
+        level = GameManager.instance.level;    
+    }
 
     void Update(){    
         if (!stop){
@@ -24,16 +28,18 @@ public class TimeManager : MonoBehaviour
                     stop = true;
                     miliseconds = 0;
                     // Kill character.
-                    SceneManager.LoadScene(0);
+                    Cursor.visible = true;
+                    PlayerPrefs.SetInt("level", level);
+                    SceneManager.LoadScene(5);
                 }
             }    
         if (!stop){miliseconds -= (Time.deltaTime * 100) * GameManager.instance.globalTimeMult;}
              
         //Debug.Log(string.Format("{0}:{1}:{2}", minutes, seconds, (int)miliseconds));
         timerDisplay.text = string.Format("{0}:{1}", seconds, (int)miliseconds);
-     if(Input.GetKeyDown(KeyCode.R))
-         SceneManager.LoadScene(0); //or whatever number your scene is
- 
+
+        // if(Input.GetKeyDown(KeyCode.R))
+        //     SceneManager.LoadScene(0); //or whatever number your scene is
         }
     }
 }

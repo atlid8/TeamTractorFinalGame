@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7948652352463340234
+--- !u!1 &8129334925777354737
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7948652352463340277}
-  - component: {fileID: 7948652352463340276}
-  - component: {fileID: 7948652352463340235}
-  - component: {fileID: 916816757}
-  - component: {fileID: 916816756}
-  - component: {fileID: 916816755}
+  - component: {fileID: 8129334925777354702}
+  - component: {fileID: 8129334925777354703}
+  - component: {fileID: 8129334925777354736}
+  - component: {fileID: 2206335250242584142}
+  - component: {fileID: 2206335250242584143}
+  - component: {fileID: 2206335250242584136}
   m_Layer: 0
-  m_Name: Stair
+  m_Name: Stair 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7948652352463340277
+--- !u!4 &8129334925777354702
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7948652352463340234}
+  m_GameObject: {fileID: 8129334925777354737}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.46, y: -1.47, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &7948652352463340276
+--- !u!212 &8129334925777354703
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7948652352463340234}
+  m_GameObject: {fileID: 8129334925777354737}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -86,14 +86,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &7948652352463340235
+--- !u!95 &8129334925777354736
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7948652352463340234}
+  m_GameObject: {fileID: 8129334925777354737}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: e11a6d8ed8d7547efbd537e5bd987295, type: 2}
@@ -105,14 +105,14 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!50 &916816757
+--- !u!50 &2206335250242584142
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7948652352463340234}
+  m_GameObject: {fileID: 8129334925777354737}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -126,13 +126,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &916816756
+--- !u!61 &2206335250242584143
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7948652352463340234}
+  m_GameObject: {fileID: 8129334925777354737}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -152,17 +152,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.77754235, y: 0.43220338}
   m_EdgeRadius: 0
---- !u!114 &916816755
+--- !u!114 &2206335250242584136
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7948652352463340234}
+  m_GameObject: {fileID: 8129334925777354737}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d24bf76a3416a64091ee0e08bb050af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScene: 1
-  nextScene: 2
+  currentScene: 2
+  nextScene: 3

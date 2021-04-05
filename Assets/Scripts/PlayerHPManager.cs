@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class PlayerHPManager : MonoBehaviour
@@ -12,9 +13,11 @@ public class PlayerHPManager : MonoBehaviour
     private TimeManager timeManager;
     public GameObject camera;
     private CameraShake cameraShake;
+    public int level;
     // Start is called before the first frame update
     void Start()
     {
+        level = GameManager.instance.level;    
         cameraShake = camera.GetComponent<CameraShake>();
         timeManager = timerCanvas.GetComponent<TimeManager>();
     }
@@ -40,7 +43,10 @@ public class PlayerHPManager : MonoBehaviour
         if (timeManager.seconds <= 0 && timeManager.miliseconds <= 0)
         {
             // Player is dead
-            Destroy(this.gameObject);
+            // Destroy(this.gameObject);
+            Cursor.visible = true;
+            PlayerPrefs.SetInt("level", level);
+            SceneManager.LoadScene(3);
         }
     }
 

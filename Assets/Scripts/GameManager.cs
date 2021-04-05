@@ -8,12 +8,16 @@ public class GameManager : MonoBehaviour
 
     public float globalTimeMult = 1f;
 
+    public int level;
+
     public GameObject slomoScreen;
 
     private void Awake()
     {
+        level = 1;
         if (!instance)
             instance = this;
+            DontDestroyOnLoad(this);
     }
     
     private void GradualSlowDown(Rigidbody2D r)

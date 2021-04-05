@@ -2862,6 +2862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   globalTimeMult: 1
+  level: 0
   slomoScreen: {fileID: 0}
 --- !u!4 &1161458749
 Transform:
@@ -4725,7 +4726,7 @@ RectTransform:
   - {fileID: 818305297}
   - {fileID: 2923745}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4749,6 +4750,7 @@ MonoBehaviour:
   seconds: 15
   miliseconds: 0
   stop: 0
+  level: 0
 --- !u!1001 &1284066332680876501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4762,7 +4764,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1284066332338887148, guid: 581d88db57e69104691f109ae6a15363, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1284066332338887148, guid: 581d88db57e69104691f109ae6a15363, type: 3}
       propertyPath: m_LocalPosition.x
