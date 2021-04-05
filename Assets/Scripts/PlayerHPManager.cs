@@ -46,7 +46,7 @@ public class PlayerHPManager : MonoBehaviour
             // Destroy(this.gameObject);
             Cursor.visible = true;
             PlayerPrefs.SetInt("level", level);
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(5);
         }
     }
 

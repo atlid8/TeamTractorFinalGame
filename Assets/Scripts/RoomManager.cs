@@ -81,6 +81,10 @@ public class RoomManager : MonoBehaviour
         }
     }
 
+    public void killedBoss(){
+        numberOfEnemies -= 1;
+    }
+
     public void setCurrentRoom(){
         current = true;
         if (!cleared){

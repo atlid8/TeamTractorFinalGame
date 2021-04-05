@@ -10,11 +10,12 @@ public class TimeManager : MonoBehaviour
     public TextMeshProUGUI timerDisplay;
     public float seconds = 10;
     public float miliseconds = 0;   
-    public bool stop = false;
+    public bool stop;
     public int level;
 
     void Start() {
         level = GameManager.instance.level;    
+        stop = false;
     }
 
     void Update(){    
