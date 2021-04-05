@@ -757,6 +757,10 @@ PrefabInstance:
       propertyPath: nextDoor
       value: 
       objectReference: {fileID: 1802453063}
+    - target: {fileID: 6375787134147747505, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
+      propertyPath: miniMapTile
+      value: 
+      objectReference: {fileID: 1051159500}
     - target: {fileID: 6953130787074217680, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1812,6 +1816,10 @@ PrefabInstance:
       propertyPath: nextDoor
       value: 
       objectReference: {fileID: 770700904}
+    - target: {fileID: 4119592040411592385, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
+      propertyPath: miniMapTile
+      value: 
+      objectReference: {fileID: 1861316821}
     - target: {fileID: 4666319984348496594, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2459,6 +2467,10 @@ PrefabInstance:
       propertyPath: nextDoor
       value: 
       objectReference: {fileID: 517399223}
+    - target: {fileID: 2960921305135387280, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
+      propertyPath: miniMapTile
+      value: 
+      objectReference: {fileID: 1035654547}
     - target: {fileID: 3581597320684838384, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2642,7 +2654,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 61cb30cc29830f940891ee4a1f4bc00b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a469bcb9e2fee754b9e18ce0ffd97a33, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4090,6 +4102,10 @@ PrefabInstance:
       propertyPath: nextDoor
       value: 
       objectReference: {fileID: 1478490352}
+    - target: {fileID: 6375787134147747505, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
+      propertyPath: miniMapTile
+      value: 
+      objectReference: {fileID: 1966672239}
     - target: {fileID: 6953130787074217680, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
       propertyPath: m_IsActive
       value: 0
