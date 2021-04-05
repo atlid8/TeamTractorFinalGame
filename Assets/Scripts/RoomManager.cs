@@ -7,7 +7,7 @@ using TMPro;
 public class RoomManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float roomTime;
+    public int roomTime;
     public bool cleared;
     public bool current;
     public int numberOfEnemies = 0;
@@ -34,7 +34,6 @@ public class RoomManager : MonoBehaviour
     void Start()
     {
         timerCanvas = GameObject.Find("TimerCanvas");
-        timerVisualIndicator = timerCanvas.GetComponentInChildren<TextMeshProUGUI>();
         timeManager = timerCanvas.GetComponent<TimeManager>();
         cleared = false;
         closedDoors = true;

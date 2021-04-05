@@ -1442,7 +1442,7 @@ PrefabInstance:
     - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: timerCanvas
       value: 
-      objectReference: {fileID: 1385531001}
+      objectReference: {fileID: 2119651459}
     - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: topDoorOpens
       value: 0
@@ -1971,7 +1971,7 @@ PrefabInstance:
     - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: timerCanvas
       value: 
-      objectReference: {fileID: 1385531001}
+      objectReference: {fileID: 2119651459}
     - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: topDoorOpens
       value: 1
