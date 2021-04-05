@@ -107,11 +107,12 @@ public class RoomManager : MonoBehaviour
                     enemy.GetComponent<BossAbilities>().activate();
                 }
                 else if (enemy.name == "Boss2"){
-                    // TODO Enable Stuff
                     enemy.GetComponent<Boss2Shooting>().activate();
-                    break;
                 }
-                if (enemy.name != "Boss"){
+                else if (enemy.name == "Turret"){
+                    enemy.transform.GetChild(0).GetComponent<BasicEnemyShooting>().activate();
+                }
+                if (enemy.name != "Boss" && enemy.name != "Boss2" && enemy.name != "Turret"){
                     enemy.GetComponent<AIPath>().canMove = true;
                     enemy.GetComponent<AIPath>().canSearch = true;
                 }

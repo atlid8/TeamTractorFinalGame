@@ -21,8 +21,12 @@ public class BasicEnemyShooting : MonoBehaviour
             GameObject shot = Instantiate(bullet, this.transform.position, this.transform.rotation);
             shot.GetComponent<BulletScript>().setBulletShooter(gameObject);
             Rigidbody2D rb = shot.GetComponent<Rigidbody2D>();
-            rb.AddForce((this.gameObject.transform.GetChild(0).up * 20f) * GameManager.instance.globalTimeMult, 
+            if (this.gameObject.name != "TurretFirePoint"){
+                rb.AddForce((this.gameObject.transform.GetChild(0).up * 20f) * GameManager.instance.globalTimeMult, 
                 ForceMode2D.Impulse);
+            } else{
+                rb.AddForce((this.gameObject.transform.parent.right * 20f) * GameManager.instance.globalTimeMult, ForceMode2D.Impulse);
+            }
             timeBetweenShots = startTimeBetweenShots;
 
         }else if (canShoot){
