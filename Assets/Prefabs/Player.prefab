@@ -370,7 +370,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &1398685338184358206
 MonoBehaviour:
@@ -406,9 +406,11 @@ MonoBehaviour:
   characterAnimation: {fileID: 1276771753010608333}
   gunPoint: {fileID: 1594069789853531392}
   bulletRotation: {fileID: 7160754692602852986}
-  muzzleFlash: {fileID: 0}
+  muzzleFlash: {fileID: 7634422996334976060, guid: 1d4d14df042fe494082d97d905ca77bd, type: 3}
   bulletForce: 20
   fireSpeed: 0.25
+  audioSource: {fileID: 0}
+  bulletSound: {fileID: 8300000, guid: 14186adddf40145d3b973ed27fbcb24c, type: 3}
 --- !u!114 &1938887641653894628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -426,6 +428,7 @@ MonoBehaviour:
   timerDisplay: {fileID: 0}
   timerVisualIndicator: {fileID: 0}
   camera: {fileID: 0}
+  level: 0
 --- !u!61 &4682878257004899664
 BoxCollider2D:
   m_ObjectHideFlags: 0

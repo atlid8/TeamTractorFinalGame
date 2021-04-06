@@ -16,7 +16,9 @@ public class PlayerShooting : MonoBehaviour
     public float bulletForce = 20f;
     public float fireSpeed = 1;
     private float canFire;
-
+    public AudioSource audioSource;
+    public AudioClip bulletSound;
+    
     private void Awake()
     {
         canFire = 0;
@@ -49,6 +51,7 @@ public class PlayerShooting : MonoBehaviour
         bulletScript.playerBullet = true;
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(bulletRotation.up * bulletForce, ForceMode2D.Impulse);
+        audioSource.PlayOneShot(bulletSound);
         /*
         GameManager.instance.AddTimeEffect(true);
         StartCoroutine(Commons.DelayedAction(() =>
