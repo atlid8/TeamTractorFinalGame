@@ -28,7 +28,7 @@ public class RoomManager : MonoBehaviour
     private GameObject rightDoor;
     private Animator anim;
 
-
+    public AudioClip bossMusic;
 
     
     void Start()
@@ -115,6 +115,20 @@ public class RoomManager : MonoBehaviour
                 if (enemy.name != "Boss" && enemy.name != "Boss2" && enemy.name != "Turret"){
                     enemy.GetComponent<AIPath>().canMove = true;
                     enemy.GetComponent<AIPath>().canSearch = true;
+                }
+            }
+        }
+
+        if (name == "BossRoom")
+        {
+            var audioGO = GameObject.Find("Audio");
+            if (audioGO)
+            {
+                var ctx = audioGO.GetComponent<AudioSource>();
+                if (audioGO && bossMusic && ctx.clip != bossMusic)
+                {
+                    ctx.clip = bossMusic;
+                    ctx.Play();
                 }
             }
         }
