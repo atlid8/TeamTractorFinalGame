@@ -52,9 +52,17 @@ public class PlayerHPManager : MonoBehaviour
 
     IEnumerator DamageText(int damageAmount)
     {
-        timerDisplay.color = new Color32(255, 0, 0, 255);
-        timerVisualIndicator.color = new Color32(255, 0, 0, 255);
-        timerVisualIndicator.text = "- " + damageAmount;
+        
+        if (damageAmount > 0){
+            timerDisplay.color = new Color32(255, 0, 0, 255);
+            timerVisualIndicator.color = new Color32(255, 0, 0, 255);
+            timerVisualIndicator.text = "- " + damageAmount;
+        }
+        else{
+            timerDisplay.color = new Color32(127, 255, 0, 255);
+            timerVisualIndicator.color = new Color32(127, 255, 0, 255);
+            timerVisualIndicator.text = "+ " + damageAmount;
+        }
         yield return new WaitForSecondsRealtime(0.5f);
         timerVisualIndicator.text = "";
         timerVisualIndicator.color = new Color32(255, 0, 0, 255);
