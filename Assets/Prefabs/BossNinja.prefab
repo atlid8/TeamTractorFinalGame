@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8626269311054502745}
   - component: {fileID: 8626269311054502746}
   - component: {fileID: 8626269311054502747}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 8545801085838902395}
   - component: {fileID: 6151863978418606031}
   - component: {fileID: 4453576526925771286}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BossNinja
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,16 +283,16 @@ MonoBehaviour:
   radius: 0.5
   height: 2
   repathRate: 0.5
-  canSearch: 1
-  canMove: 1
+  canSearch: 0
+  canMove: 0
   maxSpeed: 1
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
     m_Bits: 4294967295
   centerOffsetCompatibility: NaN
-  orientation: 0
-  enableRotation: 1
+  orientation: 1
+  enableRotation: 0
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
@@ -326,7 +326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8626269311319196947}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point32
   m_TagString: Untagged
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
@@ -356,7 +356,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8626269311417907091}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -390,7 +390,7 @@ GameObject:
   - component: {fileID: 8626269311451853097}
   - component: {fileID: 8626269311451853096}
   - component: {fileID: 8626269311451853143}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HealthBarCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -503,7 +503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8626269311526969881}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,7 +533,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8626269311618992126}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -569,7 +569,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8626269311657682213}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -599,7 +599,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8626269311878416120}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point12
   m_TagString: Untagged
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
@@ -629,7 +629,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8626269312173883200}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -659,7 +659,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8626269312222165290}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SpawnPoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -705,7 +705,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8626269312279836411}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -737,7 +737,7 @@ GameObject:
   - component: {fileID: 8626269312367990619}
   - component: {fileID: 8626269312367990621}
   - component: {fileID: 8626269312367990620}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -810,7 +810,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8626269312419965874}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -841,7 +841,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8626269312491454196}
   - component: {fileID: 8626269312491454197}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -929,7 +929,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8626269312551012522}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point22
   m_TagString: Untagged
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
@@ -959,7 +959,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8626269312630288058}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point44
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -989,7 +989,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8626269312643614810}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1019,7 +1019,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8626269312694164011}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1049,7 +1049,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8626269312721106336}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point42
   m_TagString: Untagged
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
@@ -1081,7 +1081,7 @@ GameObject:
   - component: {fileID: 8626269312767302117}
   - component: {fileID: 8626269312767302119}
   - component: {fileID: 8626269312767302118}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1154,7 +1154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8626269312883282321}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1184,7 +1184,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8626269313017613454}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1214,7 +1214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8626269313045175009}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point13
   m_TagString: Untagged
   m_Icon: {fileID: 0}

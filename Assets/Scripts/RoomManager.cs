@@ -98,10 +98,10 @@ public class RoomManager : MonoBehaviour
                 if (enemy.name == "SuicideBomber"){
                     enemy.GetComponent<SuicideBomb>().activate();
                 }
-                else if (enemy.name == "AstarTestEnemy"){
+                else if (enemy.name == "AstarTestEnemy" || enemy.name == "NinjaEnemy"){
                     enemy.GetComponent<BasicEnemyShooting>().activate();
                 }
-                else if (enemy.name == "Boss"){
+                else if (enemy.name == "Boss" || enemy.name == "BossNinja"){
                     enemy.GetComponent<BasicEnemyShooting>().activate();
                     enemy.GetComponent<BossSpawnEnemies>().activate();
                     enemy.GetComponent<BossAbilities>().activate();

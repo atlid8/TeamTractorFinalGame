@@ -26,7 +26,7 @@ public class BossSpawnEnemies : MonoBehaviour
         if (enemy.name == "SuicideBomber(Clone)"){
             enemy.GetComponent<SuicideBomb>().activate();
             }
-        else if (enemy.name == "AstarTestEnemy"){
+        else if (enemy.name == "AstarTestEnemy(Clone)" || enemy.name == "NinjaEnemy(Clone)"){
             enemy.GetComponent<BasicEnemyShooting>().activate();
             }
         enemy.GetComponent<AIPath>().canMove = true;
