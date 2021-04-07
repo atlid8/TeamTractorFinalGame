@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 8626269311285410437}
   - component: {fileID: 8545801085838902395}
   - component: {fileID: 6151863978418606031}
+  - component: {fileID: 4453576526925771286}
   m_Layer: 0
   m_Name: BossNinja
   m_TagString: Untagged
@@ -285,7 +286,7 @@ MonoBehaviour:
   canSearch: 1
   canMove: 1
   maxSpeed: 1
-  gravity: {x: NaN, y: NaN, z: NaN}
+  gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -302,6 +303,20 @@ MonoBehaviour:
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
   constrainInsideGraph: 0
+--- !u!114 &4453576526925771286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8626269311285410447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  target: {fileID: 0}
 --- !u!1 &8626269311319196946
 GameObject:
   m_ObjectHideFlags: 0
