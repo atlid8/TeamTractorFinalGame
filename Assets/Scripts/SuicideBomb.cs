@@ -30,7 +30,7 @@ public class SuicideBomb : MonoBehaviour
         }
         else if (countdownStarted){
             bombTime -= Time.deltaTime * GameManager.instance.globalTimeMult;
-            if (changeSpeedTime <= 0){
+            if (changeSpeedTime <= 0 && GameManager.instance.globalTimeMult >= 0.95f){
                 this.GetComponent<AIPath>().maxSpeed = Random.Range(maxSpeed - 5f, maxSpeed);
                 changeSpeedTime = 0.5f;
             }
