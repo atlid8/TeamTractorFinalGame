@@ -7,7 +7,7 @@ using TMPro;
 public class RoomManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float roomTime;
+    public int roomTime;
     public bool cleared;
     public bool current;
     public int numberOfEnemies = 0;
@@ -34,7 +34,6 @@ public class RoomManager : MonoBehaviour
     void Start()
     {
         timerCanvas = GameObject.Find("TimerCanvas");
-        timerVisualIndicator = timerCanvas.GetComponentInChildren<TextMeshProUGUI>();
         timeManager = timerCanvas.GetComponent<TimeManager>();
         cleared = false;
         closedDoors = true;
@@ -82,6 +81,10 @@ public class RoomManager : MonoBehaviour
         }
     }
 
+    public void killedBoss(){
+        numberOfEnemies -= 1;
+    }
+
     public void setCurrentRoom(){
         current = true;
         if (!cleared){
@@ -103,7 +106,13 @@ public class RoomManager : MonoBehaviour
                     enemy.GetComponent<BossSpawnEnemies>().activate();
                     enemy.GetComponent<BossAbilities>().activate();
                 }
-                if (enemy.name != "Boss"){
+                else if (enemy.name == "Boss2"){
+                    enemy.GetComponent<Boss2Shooting>().activate();
+                }
+                else if (enemy.name == "Turret"){
+                    enemy.transform.GetChild(0).GetComponent<BasicEnemyShooting>().activate();
+                }
+                if (enemy.name != "Boss" && enemy.name != "Boss2" && enemy.name != "Turret"){
                     enemy.GetComponent<AIPath>().canMove = true;
                     enemy.GetComponent<AIPath>().canSearch = true;
                 }

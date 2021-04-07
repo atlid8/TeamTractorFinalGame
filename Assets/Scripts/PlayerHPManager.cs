@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class PlayerHPManager : MonoBehaviour
@@ -12,9 +13,11 @@ public class PlayerHPManager : MonoBehaviour
     private TimeManager timeManager;
     public GameObject camera;
     private CameraShake cameraShake;
+    public int level;
     // Start is called before the first frame update
     void Start()
     {
+        level = GameManager.instance.level;    
         cameraShake = camera.GetComponent<CameraShake>();
         timeManager = timerCanvas.GetComponent<TimeManager>();
     }
@@ -40,15 +43,26 @@ public class PlayerHPManager : MonoBehaviour
         if (timeManager.seconds <= 0 && timeManager.miliseconds <= 0)
         {
             // Player is dead
-            Destroy(this.gameObject);
+            // Destroy(this.gameObject);
+            Cursor.visible = true;
+            PlayerPrefs.SetInt("level", level);
+            SceneManager.LoadScene(5);
         }
     }
 
     IEnumerator DamageText(int damageAmount)
     {
-        timerDisplay.color = new Color32(255, 0, 0, 255);
-        timerVisualIndicator.color = new Color32(255, 0, 0, 255);
-        timerVisualIndicator.text = "- " + damageAmount;
+        
+        if (damageAmount > 0){
+            timerDisplay.color = new Color32(255, 0, 0, 255);
+            timerVisualIndicator.color = new Color32(255, 0, 0, 255);
+            timerVisualIndicator.text = "- " + damageAmount;
+        }
+        else{
+            timerDisplay.color = new Color32(127, 255, 0, 255);
+            timerVisualIndicator.color = new Color32(127, 255, 0, 255);
+            timerVisualIndicator.text = "+ " + damageAmount;
+        }
         yield return new WaitForSecondsRealtime(0.5f);
         timerVisualIndicator.text = "";
         timerVisualIndicator.color = new Color32(255, 0, 0, 255);

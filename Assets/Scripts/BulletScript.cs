@@ -42,8 +42,18 @@ public class BulletScript : MonoBehaviour
         GameObject colliderObject = other.gameObject;
         if (colliderObject.tag == "Mirror")
         {
-            spriteR.color = Color.cyan;
-            gameObject.transform.localScale = new Vector3(0.8f, 0.8f, 0);
+            Debug.Log(gameObject.name);
+            if (gameObject.name == "PlayerBullet(Clone)")
+            {
+                spriteR.color = Color.cyan;
+                gameObject.transform.localScale = new Vector3(0.8f, 0.8f, 0);
+            }
+            else
+            {
+                spriteR.color = Color.red;
+                gameObject.transform.localScale = new Vector3(0.8f, 0.8f, 0);   
+            }
+
             ContactPoint2D contact = other.GetContact(0);
 
             // reflect our old velocity off the contact point's normal vector
@@ -81,6 +91,8 @@ public class BulletScript : MonoBehaviour
     public void setBulletShooter(GameObject owner)
     {
         shooter = owner;
-        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), shooter.GetComponentInChildren<Collider2D>());
+        if (owner.name != "TurretFirePoint"){
+            Physics2D.IgnoreCollision(GetComponent<Collider2D>(), shooter.GetComponentInChildren<Collider2D>());
+        }
     }
 }
