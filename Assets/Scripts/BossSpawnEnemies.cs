@@ -21,6 +21,7 @@ public class BossSpawnEnemies : MonoBehaviour
         spawnIndex = Random.Range(0, count);
          
         GameObject enemy = Instantiate(enemyPrefab, spawns[spawnIndex].position, enemyPrefab.transform.rotation);
+        enemy.GetComponent<AIPath>().maxSpeed *= GameManager.instance.globalTimeMult;
         enemy.transform.parent = enemyParentComponent.transform;
         if (enemy.name == "SuicideBomber(Clone)"){
             enemy.GetComponent<SuicideBomb>().activate();
