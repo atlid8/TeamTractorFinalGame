@@ -16,8 +16,10 @@ public class BasicEnemyShooting : MonoBehaviour
     void Start()
     {
         timeBetweenShots = startTimeBetweenShots + Random.Range(-0.8f, 0.8f);
-        if (this.name == "AstarTestEnemy"){
+        if (this.name == "AstarTestEnemy" || this.name == "BossNinja"){
+            Debug.Log(this.name);
             maxSpeed = this.GetComponent<AIPath>().maxSpeed;
+            Debug.Log(maxSpeed);
             this.GetComponent<AIPath>().endReachedDistance = Random.Range(this.GetComponent<AIPath>().endReachedDistance -3f, this.GetComponent<AIPath>().endReachedDistance + 1f);
         }
     }
@@ -40,7 +42,7 @@ public class BasicEnemyShooting : MonoBehaviour
         }else if (canShoot){
             timeBetweenShots -= Time.deltaTime;
         }
-        if (this.name == "AstarTestEnemy"){
+        if (this.name == "AstarTestEnemy" || this.name == "BossNinja"){
             if (changeSpeedTime <= 0 && GameManager.instance.globalTimeMult >= 0.95f){
                 this.GetComponent<AIPath>().maxSpeed = Random.Range(maxSpeed - 1f, maxSpeed + 1f);
                 changeSpeedTime = 4f;

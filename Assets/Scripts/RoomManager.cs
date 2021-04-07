@@ -109,6 +109,11 @@ public class RoomManager : MonoBehaviour
                 else if (enemy.name == "Boss2"){
                     enemy.GetComponent<Boss2Shooting>().activate();
                 }
+                else if (enemy.name == "BossNinja"){
+                    enemy.GetComponent<BasicEnemyShooting>().activate();
+                    enemy.GetComponent<BossAbilities>().activate();
+                    enemy.GetComponent<BossSpawnEnemies>().activate();
+                }
                 else if (enemy.name == "Turret"){
                     enemy.transform.GetChild(0).GetComponent<BasicEnemyShooting>().activate();
                 }
