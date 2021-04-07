@@ -405,6 +405,7 @@ GameObject:
   - component: {fileID: 3056769734107697182}
   - component: {fileID: 3056769734107697180}
   - component: {fileID: 3056769734107697171}
+  - component: {fileID: 241028611459314438}
   m_Layer: 8
   m_Name: EnemyGFX
   m_TagString: Untagged
@@ -533,6 +534,27 @@ MonoBehaviour:
   room: {fileID: 0}
   nextLeveLStairs: {fileID: 0}
   healthBar: {fileID: 571731089}
+--- !u!50 &241028611459314438
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3056769734107697176}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1000
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &3056769734634714754
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,12 +632,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 2
-  radius: 2
+  radius: 3.5
   height: 2
   repathRate: 0.5
   canSearch: 0
   canMove: 0
-  maxSpeed: 3
+  maxSpeed: 4
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -626,10 +648,10 @@ MonoBehaviour:
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
-  slowdownDistance: 5
-  pickNextWaypointDist: 8
+  slowdownDistance: 10
+  pickNextWaypointDist: 2
   endReachedDistance: 9
-  alwaysDrawGizmos: 0
+  alwaysDrawGizmos: 1
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
   constrainInsideGraph: 1
