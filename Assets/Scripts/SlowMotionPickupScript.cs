@@ -8,11 +8,24 @@ public class SlowMotionPickupScript : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private GameObject overlay;
     private AudioSource audioSource;
+    public static bool exists = false;
 
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         audioSource = GameObject.Find("Audio").GetComponent<AudioSource>();
+    }
+
+    private void Start()
+    {
+        print("Exists=True");
+        exists = true;
+    }
+
+    private void OnDestroy()
+    {
+        print("Exists=False");
+        exists = false;
     }
 
     private void GradualSlowDown(Rigidbody2D r)
