@@ -41,7 +41,7 @@ public class BasicEnemyShooting : MonoBehaviour
             timeBetweenShots -= Time.deltaTime;
         }
         if (this.name == "AstarTestEnemy"){
-            if (changeSpeedTime <= 0){
+            if (changeSpeedTime <= 0 && GameManager.instance.globalTimeMult >= 0.95f){
                 this.GetComponent<AIPath>().maxSpeed = Random.Range(maxSpeed - 1f, maxSpeed + 1f);
                 changeSpeedTime = 4f;
             }

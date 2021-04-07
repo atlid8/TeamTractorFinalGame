@@ -2085,6 +2085,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 554408435}
     m_Modifications:
+    - target: {fileID: 6151863978418606031, guid: 0bb09659e19824b37a727a7fd0199727, type: 3}
+      propertyPath: canMove
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151863978418606031, guid: 0bb09659e19824b37a727a7fd0199727, type: 3}
+      propertyPath: canSearch
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151863978418606031, guid: 0bb09659e19824b37a727a7fd0199727, type: 3}
+      propertyPath: gravity.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151863978418606031, guid: 0bb09659e19824b37a727a7fd0199727, type: 3}
+      propertyPath: gravity.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151863978418606031, guid: 0bb09659e19824b37a727a7fd0199727, type: 3}
+      propertyPath: gravity.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8626269311285410432, guid: 0bb09659e19824b37a727a7fd0199727, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2249,7 +2269,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: eb95df0e0ac0c3b459164e0730988d5c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.104
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5584,11 +5604,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3790058735512114458, guid: 6c639dfcff9e9944197f26e663b46507, type: 3}
       propertyPath: showNavGraphs
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3790058735512114458, guid: 6c639dfcff9e9944197f26e663b46507, type: 3}
       propertyPath: data.dataString
-      value: UEsDBBQAAAgIAAAAIexrVBGFaAIAAAsFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMzoWxDYbQW+sQ0kM+prSTiy9CWmMNsuSR5ADJ8N+7km1M6fRked/b1du3a38SoWwNzGmzNoI/aQ7k64j4M/kyGsBHONKdVhvxAT3nTXBXehINnJ/UCY3x2KdZXYEzgn1TO+nJEQYbJQptqhXfQaatsxguqLSAkNHOZysMfY7IER/jpU854SlZ+NMHnpbR6IxHBsqBGahx2lPHccdsiY1iklY1cK964E/TOJ3Mk7RLiqfzSTKNZvNlSFLYXcefTabLWTqNA5VpKYXtNBJ3qoMHGa1tgx0igQuKPQdhCb6WIHal614uyS9FYcF1hhh6uhcGrWurku+69bOidt/Kfaey8ffcBWltyad/0HEc4MLo6rG/NY78Da4UbP+Tnhi17sru6/D9IDsOnh2o3NOthLcS1LNeG90ojqAzjU9tLCT3w+ulsawEth/irdSbYFMPQ+hH1s/W93AOvR8zKaqthyazNrCROrgdVgIMDugHCg4LY7sSGPUqflv4RXfXm9UBD8JYh1DXpfLytroxnkpWwTPfTeMybRSY6wo1KCrd6RXruNsJ3mD/z3qg/iPqbu+w/tu4SQnhgR9FN9CrPlymZUt9eAJbvjROCgWD1R54RqMyrVS7YNct9WmbxhSUXaXtGsH/3i0CBV1Es+QuLjhbFjQZF8t5xNl2ES22cZqmCxKWTyjsk8rXVmhnD45NDcUVLlr/bxmtDa3DsnNDD2vxUWk7MIUq9IYZAPXSVrgIB4OX4NfJV1ygQRtwTqgwcPKZE6nZHnh+KZSHTldHZ2g+VMlJLd6185GcZOFnkpMzOf8BUEsDBBQAAAgIAAAAIezDMimIbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM01VFQSi9KLMgoBooYgjilmSkgdrRSalqiuYGJkYVhWkqyZVqikW6apZlBSnKSuYF5kqGpqam5UixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAAIexrVBGFaAIAAAsFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAAIezDMimIbQAAAHgAAAAJACQAAAAAAAAAAAAAALUCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAbQMAAAAA
+      value: UEsDBBQAAAgIAAAAIewixYSvUgIAAPYEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMzqVjM6FAb60hpIckTGgmF1+EtMYaZMmjjwDJ8N+7kr8onZ4s73u7em937U8ilK2BOW3WRvBHzYF8H5FwJl9GA/gAJ7rXais+oOO8Ce7KQKKR80Kd0BhPQ5rVFTgj2A+1l4GcYNArUWhTrfgeMm2dxXBBpQWEjHYhW2Hoc0RO+BgvQsoZT5NZOH3gaZGMLnhkoByYgZpOO+o4bZkN0SsmaVUDD6oH/jzpSycNUaGjlhMqMC2lsK0c4s51tJvR2no0gwQuKNqLGib4WoLYl6596ZOfi8KCa70bel4Kg11qqpKfumldRe2hUfZOpQ/3zKOipuTjP+g4jXBhdPXQ3ZpGP64U7PBCz4xad9XZ6/BykJ3G9hypPNCdhLcS1JNeG+0VR9AZH1K9hclyeO2NZSWwwxBvpN4EfT30u+t2N8bg4RK9nzIpql2Avt41ga3Usdtx+mBwLr9QcNwN25bAaFDxauE33V8vUQvcC2MdQq1LFeTttDeBSlaxZ8GNd5k2Csx1hRoUle68wTrudoI32P+z7mn4XtrbW6z7DG5SYnjgJ8kNtNHHflq21MdHsOWzd1IoGFodgCdsVKaVahbs2lKXtvWmoOwqbe8F/3u3CBR0ltxN5mnB2aKgk3Gx+JZwtpsls106nU5nJC6fUOiTyk0jtG0Pjk0NxRUuWvcbGa0NreOyc0OPa/FRaTswhSr0lhkA9dxU6IWDwUvwo+QrLrBBW3BOqDhw8pkTqdkBeN4XyqPT1ckZmg9VclKLd+1CJCdZ/G/k5EIufwBQSwMEFAAACAgAAAAh7MMyKYhtAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTVUVBKL0osyCgGihiCOKWZKSB2tFJqWqK5gYmRhWFaSrJlWqKRbpqlmUFKcpK5gXmSoampqblSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAAAh7CLFhK9SAgAA9gQAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAAAh7MMyKYhtAAAAeAAAAAkAJAAAAAAAAAAAAAAAnwIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABXAwAAAAA=
       objectReference: {fileID: 0}
     - target: {fileID: 3790058735512114459, guid: 6c639dfcff9e9944197f26e663b46507, type: 3}
       propertyPath: m_RootOrder
