@@ -10,9 +10,13 @@ public class DeathScreen : MonoBehaviour
     void Start()
     {
         level = PlayerPrefs.GetInt("level");
+        GameManager.instance.globalTimeMult = 1;
+        SlowMotionPickupScript.exists = false;
     }
 
     public void Respawn(){
+        GameManager.instance.globalTimeMult = 1;
+        SlowMotionPickupScript.exists = false;
         SceneManager.LoadScene(level);
     }
 
