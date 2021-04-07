@@ -55,3 +55,6 @@ TagManager:
   - name: DoorsBottom
     uniqueID: 948235107
     locked: 0
+  - name: Overlay
+    uniqueID: 3141741263
+    locked: 0
