@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class HitPointManager : MonoBehaviour
 {
@@ -25,6 +27,11 @@ public class HitPointManager : MonoBehaviour
         if (healthBar) {healthBar.SetHealth(currentHitPoints, maxHitpoints);}
         if (currentHitPoints <= 0)
         {
+            var range = Random.Range(0, 100);
+            if (range <= 25 && Math.Abs(GameManager.instance.globalTimeMult - 1f) < 0.01f)
+            {
+                Instantiate(Resources.Load("Prefabs/Pickup"), transform.position, transform.rotation);
+            }
             if (transform.parent != null){
                 if (transform.parent.gameObject.name == "Boss" || transform.parent.gameObject.name == "Boss2" && nextLeveLStairs){
                     var stairs = Instantiate(nextLeveLStairs, transform.parent.transform.position, new Quaternion(0, 0, 0, 0));
@@ -37,6 +44,7 @@ public class HitPointManager : MonoBehaviour
                 roomManager.killedEnemy();
                 Destroy(gameObject);
             }
+
         }
     }
 

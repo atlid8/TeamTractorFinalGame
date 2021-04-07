@@ -42,7 +42,6 @@ public class BulletScript : MonoBehaviour
         GameObject colliderObject = other.gameObject;
         if (colliderObject.tag == "Mirror")
         {
-            Debug.Log(gameObject.name);
             if (gameObject.name == "PlayerBullet(Clone)")
             {
                 spriteR.color = Color.cyan;
