@@ -32,7 +32,7 @@ public class BasicEnemyShooting : MonoBehaviour
             if (this.gameObject.name != "TurretFirePoint"){
                 rb.AddForce((this.gameObject.transform.GetChild(0).up * 20f) * GameManager.instance.globalTimeMult, 
                 ForceMode2D.Impulse);
-            } else{
+            } else{ // Gameobject is Turret.
                 rb.AddForce((this.gameObject.transform.parent.right * 20f) * GameManager.instance.globalTimeMult, ForceMode2D.Impulse);
             }
             timeBetweenShots = startTimeBetweenShots + Random.Range(-0.2f, 0.2f);

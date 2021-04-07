@@ -16,6 +16,8 @@ public class DoorTransition : MonoBehaviour
 
     public Image miniMapTile;
 
+    public Image miniMapTile2;
+
     public bool up;
     public bool down;
     public bool right;
@@ -40,6 +42,7 @@ private void Start() {
             if (up) {other.transform.position += new Vector3(0, 2, 0);}
             if (down) {other.transform.position -= new Vector3(0, 3, 0);}
             if (miniMapTile) {miniMapTile.color = new Color(255, 255, 255, 255);}
+            if (miniMapTile2) {miniMapTile2.color = new Color(255, 255, 255, 255);}
         }
     }
 }
