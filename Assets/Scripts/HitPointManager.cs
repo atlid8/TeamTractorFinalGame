@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class HitPointManager : MonoBehaviour
@@ -42,6 +43,12 @@ public class HitPointManager : MonoBehaviour
                 if (transform.parent.gameObject.name == "Boss" || transform.parent.gameObject.name == "Boss2" && nextLeveLStairs){
                     var stairs = Instantiate(nextLeveLStairs, transform.parent.transform.position, new Quaternion(0, 0, 0, 0));
                     roomManager.killedBoss();
+                }
+
+                if (transform.parent.gameObject.name == "BossNinja")
+                {
+                    roomManager.killedBoss();
+                    SceneManager.LoadScene(4);
                 }
                 roomManager.killedEnemy();
                 Destroy(transform.parent.gameObject);

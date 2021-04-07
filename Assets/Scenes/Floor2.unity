@@ -985,7 +985,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &263307676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1042,9 +1042,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eb95df0e0ac0c3b459164e0730988d5c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2e090260f033e214da9d8d543241edfd, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5068,6 +5068,10 @@ PrefabInstance:
       propertyPath: bossFight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2114736138107158020, guid: 047675f8d59184e97b9f204937d1b4a9, type: 3}
+      propertyPath: bossMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: eb95df0e0ac0c3b459164e0730988d5c, type: 3}
     - target: {fileID: 2114736138107158020, guid: 047675f8d59184e97b9f204937d1b4a9, type: 3}
       propertyPath: rightDoorOpens
       value: 1
