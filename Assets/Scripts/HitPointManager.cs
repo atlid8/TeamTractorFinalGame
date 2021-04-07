@@ -28,13 +28,14 @@ public class HitPointManager : MonoBehaviour
         if (currentHitPoints <= 0)
         {
             var range = Random.Range(0, 100);
-            if (range <= 25 && Math.Abs(GameManager.instance.globalTimeMult - 1f) < 0.01f)
+            if (range <= 25 && Math.Abs(GameManager.instance.globalTimeMult - 1f) < 0.01f && !SlowMotionPickupScript.exists)
             {
                 //print("Bam");
                 Instantiate(Resources.Load("Prefabs/Pickup"), transform.position, transform.rotation);
             }
             else
             {
+                //print(SlowMotionPickupScript.exists);
                 //print(range);
             }
             if (transform.parent != null){
