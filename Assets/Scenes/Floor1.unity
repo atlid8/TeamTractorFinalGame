@@ -594,7 +594,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8168327034752855935, guid: 7ddd1ceb2f4c27c4792e2d3b17dcc362, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5
+      value: 12.04
       objectReference: {fileID: 0}
     - target: {fileID: 8168327034752855935, guid: 7ddd1ceb2f4c27c4792e2d3b17dcc362, type: 3}
       propertyPath: m_LocalPosition.z
@@ -942,7 +942,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2114736138107158020, guid: 27a8b3924c9c94304aa268440c51bb2d, type: 3}
       propertyPath: roomTime
-      value: 50
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2114736138107158020, guid: 27a8b3924c9c94304aa268440c51bb2d, type: 3}
       propertyPath: bossFight
@@ -1752,7 +1752,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8c9233fd4e946438da582bdb02ffd283, type: 3}
+  m_audioClip: {fileID: 8300000, guid: eb95df0e0ac0c3b459164e0730988d5c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -5031,6 +5031,10 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 577555741}
+    - target: {fileID: 6836836947806163550, guid: 5cbcdc651d6cf4cca85f1647ba1b02b1, type: 3}
+      propertyPath: bulletSound
+      value: 
+      objectReference: {fileID: 8300000, guid: c6fff670a78b95f48b3324c248a7b79c, type: 3}
     - target: {fileID: 6836836947806163550, guid: 5cbcdc651d6cf4cca85f1647ba1b02b1, type: 3}
       propertyPath: bulletPrefab
       value: 

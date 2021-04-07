@@ -921,7 +921,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8c9233fd4e946438da582bdb02ffd283, type: 3}
+  m_audioClip: {fileID: 8300000, guid: eb95df0e0ac0c3b459164e0730988d5c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -4973,9 +4973,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 272195514}
     - target: {fileID: 6836836947806163550, guid: 5cbcdc651d6cf4cca85f1647ba1b02b1, type: 3}
+      propertyPath: bulletSound
+      value: 
+      objectReference: {fileID: 8300000, guid: c6fff670a78b95f48b3324c248a7b79c, type: 3}
+    - target: {fileID: 6836836947806163550, guid: 5cbcdc651d6cf4cca85f1647ba1b02b1, type: 3}
       propertyPath: muzzleFlash
       value: 
       objectReference: {fileID: 7634422996334976060, guid: 1d4d14df042fe494082d97d905ca77bd, type: 3}
+    - target: {fileID: 6836836947806163550, guid: 5cbcdc651d6cf4cca85f1647ba1b02b1, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 7754768123783791977, guid: c5f94bea616b9406880400656d5ebe3b, type: 3}
     - target: {fileID: 8112148727548656064, guid: 5cbcdc651d6cf4cca85f1647ba1b02b1, type: 3}
       propertyPath: m_CollisionDetection
       value: 1

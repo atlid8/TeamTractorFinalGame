@@ -1522,6 +1522,10 @@ PrefabInstance:
       propertyPath: muzzleFlash
       value: 
       objectReference: {fileID: 7634422996334976060, guid: 1d4d14df042fe494082d97d905ca77bd, type: 3}
+    - target: {fileID: 6836836947806163550, guid: 5cbcdc651d6cf4cca85f1647ba1b02b1, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8112148727548656064, guid: 5cbcdc651d6cf4cca85f1647ba1b02b1, type: 3}
       propertyPath: m_CollisionDetection
       value: 1
