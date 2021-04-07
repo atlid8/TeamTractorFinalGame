@@ -63,7 +63,7 @@ public class BulletScript : MonoBehaviour
             // rotate the object by the same ammount we changed its velocity
             Quaternion rotation = Quaternion.FromToRotation(oldVelocity, reflectedVelocity);
             transform.rotation = rotation * transform.rotation;
-            damage += 1;
+            damage = 2;
         }
         else if (colliderObject.GetComponent<HitPointManager>() != null)
         {
