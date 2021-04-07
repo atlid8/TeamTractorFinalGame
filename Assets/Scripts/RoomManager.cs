@@ -39,7 +39,10 @@ public class RoomManager : MonoBehaviour
         closedDoors = true;
         if (numberOfEnemies == 0){
             foreach (Transform enemy in transform.Find("Enemies")){
-                numberOfEnemies += 1;
+                if (enemy.name != "Turret")
+                {
+                    numberOfEnemies += 1;    
+                }
             }
         }
         foreach (Transform child in transform){
@@ -64,6 +67,19 @@ public class RoomManager : MonoBehaviour
         if (numberOfEnemies <= 0 && !cleared){
             if (timeManager)
                 timeManager.stop = true;
+            if (bossFight)
+            {
+                Transform EnemiesObject = transform.Find("Enemies");
+                foreach (Transform enemy in EnemiesObject.transform)
+                {
+
+                    if (enemy.name == "Turret")
+                    {
+                        enemy.transform.GetChild(0).GetComponent<BasicEnemyShooting>().canShoot = false;
+                    }
+                }
+            }
+
             cleared = true;
         }
         if (cleared && closedDoors){
