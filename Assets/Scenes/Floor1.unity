@@ -949,6 +949,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2114736138107158020, guid: 27a8b3924c9c94304aa268440c51bb2d, type: 3}
+      propertyPath: bossMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: eb95df0e0ac0c3b459164e0730988d5c, type: 3}
+    - target: {fileID: 2114736138107158020, guid: 27a8b3924c9c94304aa268440c51bb2d, type: 3}
       propertyPath: timerCanvas
       value: 
       objectReference: {fileID: 2114162116}

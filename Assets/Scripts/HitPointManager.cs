@@ -30,7 +30,12 @@ public class HitPointManager : MonoBehaviour
             var range = Random.Range(0, 100);
             if (range <= 25 && Math.Abs(GameManager.instance.globalTimeMult - 1f) < 0.01f)
             {
+                //print("Bam");
                 Instantiate(Resources.Load("Prefabs/Pickup"), transform.position, transform.rotation);
+            }
+            else
+            {
+                //print(range);
             }
             if (transform.parent != null){
                 if (transform.parent.gameObject.name == "Boss" || transform.parent.gameObject.name == "Boss2" && nextLeveLStairs){
