@@ -28,7 +28,7 @@ public class RoomManager : MonoBehaviour
     private GameObject rightDoor;
     private Animator anim;
 
-
+    public AudioClip bossMusic;
 
     
     void Start()
@@ -98,10 +98,10 @@ public class RoomManager : MonoBehaviour
                 if (enemy.name == "SuicideBomber"){
                     enemy.GetComponent<SuicideBomb>().activate();
                 }
-                else if (enemy.name == "AstarTestEnemy"){
+                else if (enemy.name == "AstarTestEnemy" || enemy.name == "NinjaEnemy"){
                     enemy.GetComponent<BasicEnemyShooting>().activate();
                 }
-                else if (enemy.name == "Boss"){
+                else if (enemy.name == "Boss" || enemy.name == "BossNinja"){
                     enemy.GetComponent<BasicEnemyShooting>().activate();
                     enemy.GetComponent<BossSpawnEnemies>().activate();
                     enemy.GetComponent<BossAbilities>().activate();
@@ -109,17 +109,26 @@ public class RoomManager : MonoBehaviour
                 else if (enemy.name == "Boss2"){
                     enemy.GetComponent<Boss2Shooting>().activate();
                 }
-                else if (enemy.name == "BossNinja"){
-                    enemy.GetComponent<BasicEnemyShooting>().activate();
-                    enemy.GetComponent<BossAbilities>().activate();
-                    enemy.GetComponent<BossSpawnEnemies>().activate();
-                }
                 else if (enemy.name == "Turret"){
                     enemy.transform.GetChild(0).GetComponent<BasicEnemyShooting>().activate();
                 }
                 if (enemy.name != "Boss" && enemy.name != "Boss2" && enemy.name != "Turret"){
                     enemy.GetComponent<AIPath>().canMove = true;
                     enemy.GetComponent<AIPath>().canSearch = true;
+                }
+            }
+        }
+
+        if (name == "BossRoom")
+        {
+            var audioGO = GameObject.Find("Audio");
+            if (audioGO)
+            {
+                var ctx = audioGO.GetComponent<AudioSource>();
+                if (audioGO && bossMusic && ctx.clip != bossMusic)
+                {
+                    ctx.clip = bossMusic;
+                    ctx.Play();
                 }
             }
         }
