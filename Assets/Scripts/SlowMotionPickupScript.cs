@@ -18,13 +18,11 @@ public class SlowMotionPickupScript : MonoBehaviour
 
     private void Start()
     {
-        print("Exists=True");
         exists = true;
     }
 
     private void OnDestroy()
     {
-        print("Exists=False");
         exists = false;
     }
 
