@@ -529,8 +529,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcf91010c42c35f489f2d6523b1eac8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHitpoints: 7
-  currentHitPoints: 7
+  maxHitpoints: 5
+  currentHitPoints: 5
   room: {fileID: 0}
   nextLeveLStairs: {fileID: 0}
   healthBar: {fileID: 571731089}
