@@ -12,10 +12,13 @@ public class TimeManager : MonoBehaviour
     public float miliseconds = 0;   
     public bool stop;
     public int level;
+    private Animator anim;
+    
 
     void Start() {
         level = GameManager.instance.level;    
         stop = false;
+        anim = transform.GetChild(0).GetComponent<Animator>();
     }
 
     void Update(){    
@@ -42,5 +45,18 @@ public class TimeManager : MonoBehaviour
         // if(Input.GetKeyDown(KeyCode.R))
         //     SceneManager.LoadScene(0); //or whatever number your scene is
         }
+
+        if (seconds < 5)
+        {
+            timerDisplay.color = Color.red;
+            anim.SetBool("isLow", true);
+        }
+        else
+        {
+            timerDisplay.color = Color.white;
+            anim.SetBool("isLow", false);
+        }
+
     }
+    
 }

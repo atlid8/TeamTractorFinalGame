@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: -4
-  lifeTime: 20
+  lifeTime: 10
   hitEffect: {fileID: 7202353200632285531, guid: f6d842cd4bc3b46f1be7bed07ce8fa78, type: 3}
   playerBullet: 0
 --- !u!58 &1080836144000019631
