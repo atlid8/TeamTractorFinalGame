@@ -208,6 +208,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: timerCanvas
+      value: 
+      objectReference: {fileID: 2119651459}
+    - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: leftDoorOpens
       value: 1
       objectReference: {fileID: 0}
@@ -215,6 +219,10 @@ PrefabInstance:
       propertyPath: bottomDoorOpens
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: timerVisualIndicator
+      value: 
+      objectReference: {fileID: 1602089612}
     - target: {fileID: 2114736138107158022, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: m_Name
       value: Room3
@@ -947,9 +955,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: eb95df0e0ac0c3b459164e0730988d5c, type: 3}
     - target: {fileID: 2114736138107158020, guid: 326aa2e6d3e9b494e8964e8231393e44, type: 3}
+      propertyPath: timerCanvas
+      value: 
+      objectReference: {fileID: 2119651459}
+    - target: {fileID: 2114736138107158020, guid: 326aa2e6d3e9b494e8964e8231393e44, type: 3}
       propertyPath: bottomDoorOpens
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2114736138107158020, guid: 326aa2e6d3e9b494e8964e8231393e44, type: 3}
+      propertyPath: timerVisualIndicator
+      value: 
+      objectReference: {fileID: 1602089612}
     - target: {fileID: 2114736138107158022, guid: 326aa2e6d3e9b494e8964e8231393e44, type: 3}
       propertyPath: m_Name
       value: BossRoom
@@ -1085,6 +1101,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2114736138107158020, guid: f8a2cd529c2a5495683f096c2d778fa4, type: 3}
+      propertyPath: timerCanvas
+      value: 
+      objectReference: {fileID: 2119651459}
+    - target: {fileID: 2114736138107158020, guid: f8a2cd529c2a5495683f096c2d778fa4, type: 3}
       propertyPath: topDoorOpens
       value: 1
       objectReference: {fileID: 0}
@@ -1092,6 +1112,10 @@ PrefabInstance:
       propertyPath: bottomDoorOpens
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2114736138107158020, guid: f8a2cd529c2a5495683f096c2d778fa4, type: 3}
+      propertyPath: timerVisualIndicator
+      value: 
+      objectReference: {fileID: 1602089612}
     - target: {fileID: 2114736138107158022, guid: f8a2cd529c2a5495683f096c2d778fa4, type: 3}
       propertyPath: m_Name
       value: Room4
@@ -1725,6 +1749,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: timerCanvas
+      value: 
+      objectReference: {fileID: 2119651459}
+    - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: topDoorOpens
       value: 1
       objectReference: {fileID: 0}
@@ -1736,6 +1764,10 @@ PrefabInstance:
       propertyPath: bottomDoorOpens
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: timerVisualIndicator
+      value: 
+      objectReference: {fileID: 1602089612}
     - target: {fileID: 2114736138107158022, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: m_Name
       value: Room9
@@ -2393,6 +2425,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: timerCanvas
+      value: 
+      objectReference: {fileID: 2119651459}
+    - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: topDoorOpens
       value: 1
       objectReference: {fileID: 0}
@@ -2400,6 +2436,10 @@ PrefabInstance:
       propertyPath: leftDoorOpens
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: timerVisualIndicator
+      value: 
+      objectReference: {fileID: 1602089612}
     - target: {fileID: 2114736138107158022, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: m_Name
       value: Room5
@@ -3390,6 +3430,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2114736138107158020, guid: f8a2cd529c2a5495683f096c2d778fa4, type: 3}
+      propertyPath: timerCanvas
+      value: 
+      objectReference: {fileID: 2119651459}
+    - target: {fileID: 2114736138107158020, guid: f8a2cd529c2a5495683f096c2d778fa4, type: 3}
       propertyPath: topDoorOpens
       value: 1
       objectReference: {fileID: 0}
@@ -3397,6 +3441,10 @@ PrefabInstance:
       propertyPath: bottomDoorOpens
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2114736138107158020, guid: f8a2cd529c2a5495683f096c2d778fa4, type: 3}
+      propertyPath: timerVisualIndicator
+      value: 
+      objectReference: {fileID: 1602089612}
     - target: {fileID: 2114736138107158022, guid: f8a2cd529c2a5495683f096c2d778fa4, type: 3}
       propertyPath: m_Name
       value: Room11
@@ -3959,7 +4007,7 @@ PrefabInstance:
     - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: timerCanvas
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2119651459}
     - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: topDoorOpens
       value: 0
@@ -3979,7 +4027,7 @@ PrefabInstance:
     - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: timerVisualIndicator
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1602089612}
     - target: {fileID: 2114736138107158022, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: m_Name
       value: Room2
@@ -6666,6 +6714,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2077134336}
     - target: {fileID: 2114736138107158020, guid: f8a2cd529c2a5495683f096c2d778fa4, type: 3}
+      propertyPath: timerCanvas
+      value: 
+      objectReference: {fileID: 2119651459}
+    - target: {fileID: 2114736138107158020, guid: f8a2cd529c2a5495683f096c2d778fa4, type: 3}
       propertyPath: topDoorOpens
       value: 1
       objectReference: {fileID: 0}
@@ -6677,6 +6729,10 @@ PrefabInstance:
       propertyPath: rightDoorOpens
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2114736138107158020, guid: f8a2cd529c2a5495683f096c2d778fa4, type: 3}
+      propertyPath: timerVisualIndicator
+      value: 
+      objectReference: {fileID: 1602089612}
     - target: {fileID: 2114736138107158022, guid: f8a2cd529c2a5495683f096c2d778fa4, type: 3}
       propertyPath: m_Name
       value: Room6
@@ -7139,6 +7195,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1070955292}
     - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: timerCanvas
+      value: 
+      objectReference: {fileID: 2119651459}
+    - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: topDoorOpens
       value: 1
       objectReference: {fileID: 0}
@@ -7146,6 +7206,10 @@ PrefabInstance:
       propertyPath: bottomDoorOpens
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: timerVisualIndicator
+      value: 
+      objectReference: {fileID: 1602089612}
     - target: {fileID: 2114736138107158022, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: m_Name
       value: Room10
@@ -7618,6 +7682,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: timerCanvas
+      value: 
+      objectReference: {fileID: 2119651459}
+    - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: topDoorOpens
       value: 1
       objectReference: {fileID: 0}
@@ -7625,6 +7693,10 @@ PrefabInstance:
       propertyPath: rightDoorOpens
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: timerVisualIndicator
+      value: 
+      objectReference: {fileID: 1602089612}
     - target: {fileID: 2114736138107158022, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: m_Name
       value: Room7
@@ -9148,6 +9220,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: timerCanvas
+      value: 
+      objectReference: {fileID: 2119651459}
+    - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: leftDoorOpens
       value: 1
       objectReference: {fileID: 0}
@@ -9155,6 +9231,10 @@ PrefabInstance:
       propertyPath: bottomDoorOpens
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2114736138107158020, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: timerVisualIndicator
+      value: 
+      objectReference: {fileID: 1602089612}
     - target: {fileID: 2114736138107158022, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: m_Name
       value: Room8
