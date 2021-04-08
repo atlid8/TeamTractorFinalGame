@@ -303,6 +303,14 @@ PrefabInstance:
       propertyPath: nextDoor
       value: 
       objectReference: {fileID: 281559117}
+    - target: {fileID: 5118480520778326876, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: miniMapTile
+      value: 
+      objectReference: {fileID: 302292187}
+    - target: {fileID: 5118480520778326876, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: miniMapTile2
+      value: 
+      objectReference: {fileID: 668233095}
     - target: {fileID: 6454781762783154010, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1132,6 +1140,10 @@ PrefabInstance:
       propertyPath: nextDoor
       value: 
       objectReference: {fileID: 526598838}
+    - target: {fileID: 3126623003034780934, guid: f8a2cd529c2a5495683f096c2d778fa4, type: 3}
+      propertyPath: miniMapTile
+      value: 
+      objectReference: {fileID: 1033507137}
     - target: {fileID: 3457442925526314385, guid: f8a2cd529c2a5495683f096c2d778fa4, type: 3}
       propertyPath: m_Size.x
       value: 2.8667984
@@ -1788,10 +1800,18 @@ PrefabInstance:
       propertyPath: nextDoor
       value: 
       objectReference: {fileID: 940721171}
+    - target: {fileID: 5118480520778326876, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: miniMapTile
+      value: 
+      objectReference: {fileID: 202356436}
     - target: {fileID: 5293469842343409865, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: nextDoor
       value: 
       objectReference: {fileID: 1961276434}
+    - target: {fileID: 5293469842343409865, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: miniMapTile
+      value: 
+      objectReference: {fileID: 2077134336}
     - target: {fileID: 6172130362516915480, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1808,6 +1828,10 @@ PrefabInstance:
       propertyPath: nextDoor
       value: 
       objectReference: {fileID: 521695095}
+    - target: {fileID: 8447208727871005720, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: miniMapTile
+      value: 
+      objectReference: {fileID: 1192954675}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
 --- !u!60 &439014628 stripped
@@ -2416,6 +2440,14 @@ PrefabInstance:
       propertyPath: nextDoor
       value: 
       objectReference: {fileID: 978786055}
+    - target: {fileID: 3022257418934861613, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: miniMapTile
+      value: 
+      objectReference: {fileID: 501776226}
+    - target: {fileID: 3022257418934861613, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: miniMapTile2
+      value: 
+      objectReference: {fileID: 1742715420}
     - target: {fileID: 3460407788960595882, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: nextDoor
       value: 
@@ -3309,6 +3341,10 @@ PrefabInstance:
       propertyPath: nextDoor
       value: 
       objectReference: {fileID: 134813933}
+    - target: {fileID: 1258260114240984478, guid: f8a2cd529c2a5495683f096c2d778fa4, type: 3}
+      propertyPath: miniMapTile
+      value: 
+      objectReference: {fileID: 1961984034}
     - target: {fileID: 2004626959548963176, guid: f8a2cd529c2a5495683f096c2d778fa4, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3996,6 +4032,10 @@ PrefabInstance:
       propertyPath: nextDoor
       value: 
       objectReference: {fileID: 38345754}
+    - target: {fileID: 5293469842343409865, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: miniMapTile
+      value: 
+      objectReference: {fileID: 480269973}
     - target: {fileID: 5445254410909261316, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -4984,6 +5024,10 @@ PrefabInstance:
       propertyPath: nextDoor
       value: 
       objectReference: {fileID: 810943670}
+    - target: {fileID: 5293469842343409865, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: miniMapTile
+      value: 
+      objectReference: {fileID: 1696012490}
     - target: {fileID: 5445254410909261316, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -6485,6 +6529,10 @@ PrefabInstance:
       propertyPath: nextDoor
       value: 
       objectReference: {fileID: 1911201368}
+    - target: {fileID: 1258260114240984478, guid: f8a2cd529c2a5495683f096c2d778fa4, type: 3}
+      propertyPath: miniMapTile
+      value: 
+      objectReference: {fileID: 2077134336}
     - target: {fileID: 2114736138107158020, guid: f8a2cd529c2a5495683f096c2d778fa4, type: 3}
       propertyPath: topDoorOpens
       value: 1
@@ -6569,6 +6617,10 @@ PrefabInstance:
       propertyPath: nextDoor
       value: 
       objectReference: {fileID: 1344333151}
+    - target: {fileID: 4792987959105173881, guid: f8a2cd529c2a5495683f096c2d778fa4, type: 3}
+      propertyPath: miniMapTile
+      value: 
+      objectReference: {fileID: 202356436}
     - target: {fileID: 5537828158796289464, guid: f8a2cd529c2a5495683f096c2d778fa4, type: 3}
       propertyPath: nextDoor
       value: 
@@ -7050,6 +7102,14 @@ PrefabInstance:
       propertyPath: nextDoor
       value: 
       objectReference: {fileID: 974235679}
+    - target: {fileID: 8447208727871005720, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: miniMapTile
+      value: 
+      objectReference: {fileID: 1730170611}
+    - target: {fileID: 8447208727871005720, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: miniMapTile2
+      value: 
+      objectReference: {fileID: 1070955292}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
 --- !u!4 &1642646464 stripped
@@ -7517,6 +7577,10 @@ PrefabInstance:
       propertyPath: nextDoor
       value: 
       objectReference: {fileID: 552221480}
+    - target: {fileID: 8447208727871005720, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: miniMapTile
+      value: 
+      objectReference: {fileID: 408708506}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
 --- !u!60 &1734741510 stripped
@@ -8999,6 +9063,10 @@ PrefabInstance:
       propertyPath: nextDoor
       value: 
       objectReference: {fileID: 1516940415}
+    - target: {fileID: 3022257418934861613, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
+      propertyPath: miniMapTile
+      value: 
+      objectReference: {fileID: 408708506}
     - target: {fileID: 3460407788960595882, guid: 8a66386e3839a4f828652dfb340456e0, type: 3}
       propertyPath: nextDoor
       value: 
