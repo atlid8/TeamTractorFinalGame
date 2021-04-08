@@ -22,9 +22,31 @@ public class HitPointManager : MonoBehaviour
         healthBar.SetHealth(currentHitPoints, maxHitpoints);
     }
 
+    private void indicateDamage(){
+        if (transform.parent.name == "AstarTestEnemy"){
+            StartCoroutine(Damage1());
+        }
+        if (transform.parent.name == "SuicideBomber" || transform.parent.name == "SuicideBomber(Clone)"){
+            StartCoroutine(Damage2());
+        }
+        if (transform.parent.name == "NinjaEnemy" || transform.parent.name == "NinjaEnemy(Clone)"){
+            StartCoroutine(Damage3());
+        }
+        if (transform.parent.name == "Boss"){
+            StartCoroutine(DamageBoss1());
+        }
+        if (transform.parent.name == "Boss2"){
+            StartCoroutine(DamageBoss2());
+        }
+        if (transform.parent.name == "BossNinja"){
+            StartCoroutine(DamageBoss1());
+        }
+    }
+
     public void takeDamage(int damageAmount)
     {
         currentHitPoints -= damageAmount;
+        indicateDamage();
         if (healthBar) {healthBar.SetHealth(currentHitPoints, maxHitpoints);}
         if (currentHitPoints <= 0)
         {
@@ -59,6 +81,38 @@ public class HitPointManager : MonoBehaviour
             }
 
         }
+    }
+
+    IEnumerator Damage1(){
+        gameObject.GetComponent<SpriteRenderer>().color = new Color32(255, 0, 0, 255);
+        yield return new WaitForSeconds(0.3f);
+        gameObject.GetComponent<SpriteRenderer>().color = new Color32(17, 231, 0, 255);
+    }
+
+    IEnumerator Damage2(){
+        gameObject.GetComponent<SpriteRenderer>().color = new Color32(255, 0, 0, 255);
+        yield return new WaitForSeconds(0.3f);
+        gameObject.GetComponent<SpriteRenderer>().color = new Color32(255, 123, 0, 255);
+    }
+
+    IEnumerator Damage3(){
+        gameObject.GetComponent<SpriteRenderer>().color = new Color32(255, 0, 0, 255);
+        yield return new WaitForSeconds(0.3f);
+        gameObject.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
+    }
+
+    IEnumerator DamageBoss1(){
+        transform.parent.GetComponent<SpriteRenderer>().color = new Color32(255, 0, 0, 255);
+        yield return new WaitForSeconds(0.2f);
+        transform.parent.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
+    }
+
+    IEnumerator DamageBoss2(){
+        transform.parent.GetComponent<SpriteRenderer>().color = new Color32(255, 100, 100, 255);
+        gameObject.GetComponent<SpriteRenderer>().color = new Color32(255, 100, 100, 255);
+        yield return new WaitForSeconds(0.2f);
+        gameObject.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
+        transform.parent.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
     }
 
     public void destroyFromParent(){

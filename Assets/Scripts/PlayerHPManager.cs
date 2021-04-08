@@ -32,6 +32,7 @@ public class PlayerHPManager : MonoBehaviour
         timeManager.seconds -= damageAmount;
         if (timeManager.seconds >= 1){
             StartCoroutine(DamageText(damageAmount));
+            StartCoroutine(indicateDamage());
         }
         else {
             timeManager.seconds = 0;
@@ -48,6 +49,25 @@ public class PlayerHPManager : MonoBehaviour
             PlayerPrefs.SetInt("level", level);
             SceneManager.LoadScene(5);
         }
+    }
+
+    IEnumerator indicateDamage(){
+        // Arms
+        transform.GetChild(1).GetChild(0).GetChild(0).GetChild(1).GetComponent<SpriteRenderer>().color = new Color32(255, 0, 0, 255);
+        // Shotgun
+        transform.GetChild(1).GetChild(0).GetChild(0).GetChild(0).GetComponent<SpriteRenderer>().color = new Color32(255, 0, 0, 255);
+        // Legs
+        transform.GetChild(1).GetChild(1).GetComponent<SpriteRenderer>().color = new Color32(255, 0, 0, 255);
+        // Body
+        transform.GetChild(1).GetChild(2).GetComponent<SpriteRenderer>().color = new Color32(255, 0, 0, 255);
+        // Head
+        transform.GetChild(1).GetChild(3).GetComponent<SpriteRenderer>().color = new Color32(255, 0, 0, 255);
+        yield return new WaitForSeconds(0.3f);
+        transform.GetChild(1).GetChild(0).GetChild(0).GetChild(1).GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
+        transform.GetChild(1).GetChild(0).GetChild(0).GetChild(0).GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
+        transform.GetChild(1).GetChild(1).GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
+        transform.GetChild(1).GetChild(2).GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
+        transform.GetChild(1).GetChild(3).GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
     }
 
     IEnumerator DamageText(int damageAmount)
