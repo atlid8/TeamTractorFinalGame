@@ -33,7 +33,7 @@ public class RoomManager : MonoBehaviour
     
     void Start()
     {
-        timerCanvas = GameObject.Find("TimerCanvas");
+        if (!timerCanvas) {timerCanvas = GameObject.Find("TimerCanvas");}
         timeManager = timerCanvas.GetComponent<TimeManager>();
         cleared = false;
         closedDoors = true;
@@ -152,9 +152,9 @@ public class RoomManager : MonoBehaviour
     IEnumerator indicateTime(){
         timerVisualIndicator.color = new Color32(0, 0, 200, 255);
         timerVisualIndicator.text = "+ " + roomTime;
-        timerCanvas.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color = new Color32(0, 0, 200, 255);
+        timerCanvas.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().color = new Color32(0, 0, 200, 255);
         yield return new WaitForSeconds(0.5f);
-        timerCanvas.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color = new Color32(255, 255, 255, 255);
+        timerCanvas.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().color = new Color32(255, 255, 255, 255);
         timerVisualIndicator.color = new Color32(255, 255, 255, 255);
         timerVisualIndicator.text = "";
     }

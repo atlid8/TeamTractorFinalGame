@@ -672,7 +672,7 @@ PrefabInstance:
     - target: {fileID: 2114736138107158020, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
       propertyPath: timerCanvas
       value: 
-      objectReference: {fileID: 526331072}
+      objectReference: {fileID: 2114162116}
     - target: {fileID: 2114736138107158020, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
       propertyPath: leftDoorOpens
       value: 0
@@ -1926,7 +1926,7 @@ PrefabInstance:
     - target: {fileID: 2114736138107158020, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
       propertyPath: timerCanvas
       value: 
-      objectReference: {fileID: 526331072}
+      objectReference: {fileID: 2114162116}
     - target: {fileID: 2114736138107158020, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
       propertyPath: leftDoorOpens
       value: 1
@@ -2578,7 +2578,7 @@ PrefabInstance:
     - target: {fileID: 2114736138107158020, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
       propertyPath: timerCanvas
       value: 
-      objectReference: {fileID: 526331072}
+      objectReference: {fileID: 2114162116}
     - target: {fileID: 2114736138107158020, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
       propertyPath: topDoorOpens
       value: 1
@@ -3750,7 +3750,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1561698732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4182,7 +4182,7 @@ PrefabInstance:
     - target: {fileID: 2114736138107158020, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
       propertyPath: timerCanvas
       value: 
-      objectReference: {fileID: 526331072}
+      objectReference: {fileID: 2114162116}
     - target: {fileID: 2114736138107158020, guid: a0e19fea4050041e2a36d705086830a9, type: 3}
       propertyPath: topDoorOpens
       value: 1
