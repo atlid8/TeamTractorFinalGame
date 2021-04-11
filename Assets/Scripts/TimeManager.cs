@@ -46,6 +46,10 @@ public class TimeManager : MonoBehaviour
         //     SceneManager.LoadScene(0); //or whatever number your scene is
         }
 
+        else if (stop) {
+            timerDisplay.text = string.Format("{0}:{1}", seconds, (int)miliseconds);
+        }
+
         if (seconds < 5)
         {
             timerDisplay.color = Color.red;
