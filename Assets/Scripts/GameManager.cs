@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject slomoScreen;
 
+    public float gameVolume = 0.5f;
+    
     private void Awake()
     {
         level = 1;
@@ -21,7 +23,4 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(this);
         }
     }
-    
-    
-    
 }
