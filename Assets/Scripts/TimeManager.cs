@@ -52,12 +52,10 @@ public class TimeManager : MonoBehaviour
 
         if (seconds < 5)
         {
-            timerDisplay.color = Color.red;
             anim.SetBool("isLow", true);
         }
         else
         {
-            timerDisplay.color = Color.white;
             anim.SetBool("isLow", false);
         }
 

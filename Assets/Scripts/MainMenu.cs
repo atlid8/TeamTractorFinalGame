@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
         Cursor.visible = true;    
     }
     public void StartGame(){
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(GameManager.instance.level);
     }
 
     public void ExitGame(){

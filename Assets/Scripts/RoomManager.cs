@@ -33,7 +33,7 @@ public class RoomManager : MonoBehaviour
     
     void Start()
     {
-        if (!timerCanvas) {timerCanvas = GameObject.Find("TimerCanvas");}
+        timerCanvas = GameObject.Find("TimerCanvas");
         timeManager = timerCanvas.GetComponent<TimeManager>();
         cleared = false;
         closedDoors = true;
