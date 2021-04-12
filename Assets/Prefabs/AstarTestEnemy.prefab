@@ -534,6 +534,7 @@ MonoBehaviour:
   room: {fileID: 0}
   nextLeveLStairs: {fileID: 0}
   healthBar: {fileID: 571731089}
+  hitSound: {fileID: 8300000, guid: df1727c65d9c74e9f9f9d57d169feafc, type: 3}
 --- !u!50 &241028611459314438
 Rigidbody2D:
   serializedVersion: 4
@@ -685,6 +686,7 @@ MonoBehaviour:
   bullet: {fileID: 7754768123783791977, guid: c2df36afde51de04f9c2a7bb41b6fba2, type: 3}
   startTimeBetweenShots: 2
   timeBetweenShots: 1
+  shootingSound: {fileID: 8300000, guid: d21a350beaf6c450a986c012e6dbffbf, type: 3}
 --- !u!1 &3056769735177828059
 GameObject:
   m_ObjectHideFlags: 0

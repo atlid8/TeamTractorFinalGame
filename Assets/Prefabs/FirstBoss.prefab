@@ -75,6 +75,7 @@ MonoBehaviour:
   room: {fileID: 0}
   nextLeveLStairs: {fileID: 7948652352463340234, guid: ce129f5d435e640c9bf399e33a542a5b, type: 3}
   healthBar: {fileID: 8626269311451853143}
+  hitSound: {fileID: 8300000, guid: df1727c65d9c74e9f9f9d57d169feafc, type: 3}
 --- !u!1 &8626269311285410447
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,7 +91,7 @@ GameObject:
   - component: {fileID: 8626269311285410436}
   - component: {fileID: 8626269311285410437}
   m_Layer: 0
-  m_Name: Boss
+  m_Name: FirstBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -192,6 +193,7 @@ MonoBehaviour:
   bullet: {fileID: 7754768123783791977, guid: c2df36afde51de04f9c2a7bb41b6fba2, type: 3}
   startTimeBetweenShots: 1
   timeBetweenShots: 1
+  shootingSound: {fileID: 8300000, guid: d21a350beaf6c450a986c012e6dbffbf, type: 3}
 --- !u!114 &8626269311285410436
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,11 +12,14 @@ public class HitPointManager : MonoBehaviour
     public GameObject room;
     public GameObject nextLeveLStairs;
     public EnemyHealthBar healthBar;
+    public AudioClip hitSound;
     private RoomManager roomManager;
+    private AudioSource audioSource;
 
 
     void Start(){
         if (!room){room = transform.parent.parent.parent.gameObject;}
+        audioSource = GameObject.Find("Audio").GetComponent<AudioSource>();
         maxHitpoints = currentHitPoints;
         roomManager = room.GetComponent<RoomManager>();
         healthBar.SetHealth(currentHitPoints, maxHitpoints);
@@ -46,6 +49,7 @@ public class HitPointManager : MonoBehaviour
     public void takeDamage(int damageAmount)
     {
         currentHitPoints -= damageAmount;
+        audioSource.PlayOneShot(hitSound);
         indicateDamage();
         if (healthBar) {healthBar.SetHealth(currentHitPoints, maxHitpoints);}
         if (currentHitPoints <= 0)

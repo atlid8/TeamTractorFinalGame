@@ -390,6 +390,8 @@ MonoBehaviour:
   playerArt: {fileID: 1276771753010608333}
   bulletRotation: {fileID: 7160754692602852986}
   gunPoint: {fileID: 1594069789853531392}
+  audioSource: {fileID: 0}
+  footstepSound: {fileID: 8300000, guid: 83008e475703c4919abae7154cc83ed2, type: 3}
 --- !u!114 &6836836947806163550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,7 +412,7 @@ MonoBehaviour:
   bulletForce: 20
   fireSpeed: 0.25
   audioSource: {fileID: 0}
-  bulletSound: {fileID: 8300000, guid: 14186adddf40145d3b973ed27fbcb24c, type: 3}
+  bulletSound: {fileID: 8300000, guid: c6fff670a78b95f48b3324c248a7b79c, type: 3}
 --- !u!114 &1938887641653894628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -429,6 +431,8 @@ MonoBehaviour:
   timerVisualIndicator: {fileID: 0}
   camera: {fileID: 0}
   level: 0
+  audioSource: {fileID: 0}
+  hitSound: {fileID: 8300000, guid: 1f3c86000fdff4082888c460a62f212f, type: 3}
 --- !u!61 &4682878257004899664
 BoxCollider2D:
   m_ObjectHideFlags: 0

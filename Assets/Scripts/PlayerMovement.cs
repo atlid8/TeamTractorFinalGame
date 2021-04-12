@@ -13,6 +13,11 @@ public class PlayerMovement : MonoBehaviour
     private CharacterAnimation playerArtScript;
     public Transform bulletRotation;
     public Transform gunPoint;
+    public AudioSource audioSource;
+    public AudioClip footstepSound;
+
+    private float interval = 0.3f;
+    private float nextTime = 0;
     
     Vector2 movement;
     Vector2 mousePos;
@@ -34,7 +39,15 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate() 
     {
         if (Math.Abs(movement.x) > 0.001 || Math.Abs(movement.y) > 0.001)
+        {
             playerArtScript.SetRunningAnimation(true);
+            if (Time.time >= nextTime)
+            {
+                audioSource.PlayOneShot(footstepSound);
+                nextTime = Time.time + interval;
+            }
+            
+        }
         else 
             playerArtScript.SetRunningAnimation(false);
         rb.MovePosition(rb.position + movement * (moveSpeed * Time.fixedDeltaTime));
@@ -48,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
             angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
         }
         playerArtScript.angle = angle;
-        
     }
+    
+    
 }

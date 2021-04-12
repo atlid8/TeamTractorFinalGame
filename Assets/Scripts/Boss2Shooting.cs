@@ -13,10 +13,14 @@ public class Boss2Shooting : MonoBehaviour
 
     public float startTimeBetweenShots;
     public float timeBetweenShots;
+    public AudioClip bossShootingSound;
+
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GameObject.Find("Audio").GetComponent<AudioSource>();
         timeBetweenShots = startTimeBetweenShots;
     }
 
@@ -24,6 +28,7 @@ public class Boss2Shooting : MonoBehaviour
     void Update()
     {
         if (timeBetweenShots <= 0 && canShoot && whichArm) {
+            audioSource.PlayOneShot(bossShootingSound);
             GameObject shot = Instantiate(bullet, firePoint1.transform.position, firePoint1.transform.rotation);
             shot.GetComponent<BulletScript>().setBulletShooter(gameObject);
             Rigidbody2D rb = shot.GetComponent<Rigidbody2D>();

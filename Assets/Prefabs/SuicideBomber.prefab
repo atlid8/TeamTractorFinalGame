@@ -603,6 +603,7 @@ MonoBehaviour:
   countdownStarted: 0
   bombTime: 5
   explosionPrefab: {fileID: 1410045518754484711, guid: 5a3c0775f13b86f439b50daee1cd10f5, type: 3}
+  suicideBombSound: {fileID: 8300000, guid: c073e965bc39340049fab4044e544b20, type: 3}
 --- !u!1 &7337899637899498717
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,7 +681,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 872202f0b5c2c43a3b6b7eedd47a487b, type: 3}
-  m_Color: {r: 1, g: 0.48235294, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.48235297, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -745,6 +746,7 @@ MonoBehaviour:
   room: {fileID: 0}
   nextLeveLStairs: {fileID: 0}
   healthBar: {fileID: 5746214030398332067}
+  hitSound: {fileID: 8300000, guid: df1727c65d9c74e9f9f9d57d169feafc, type: 3}
 --- !u!50 &2994690278488713170
 Rigidbody2D:
   serializedVersion: 4

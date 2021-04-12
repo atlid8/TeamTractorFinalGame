@@ -14,10 +14,13 @@ public class PlayerHPManager : MonoBehaviour
     public GameObject camera;
     private CameraShake cameraShake;
     public int level;
+    public AudioSource audioSource;
+    public AudioClip hitSound;
+    
     // Start is called before the first frame update
     void Start()
     {
-        level = GameManager.instance.level;    
+        level = GameManager.instance.level;
         cameraShake = camera.GetComponent<CameraShake>();
         timeManager = timerCanvas.GetComponent<TimeManager>();
     }
@@ -30,6 +33,7 @@ public class PlayerHPManager : MonoBehaviour
     public void takeDamage(int damageAmount)
     {
         timeManager.seconds -= damageAmount;
+        audioSource.PlayOneShot(hitSound);
         if (timeManager.seconds >= 1){
             StartCoroutine(DamageText(damageAmount));
             StartCoroutine(indicateDamage());

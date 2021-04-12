@@ -9,17 +9,19 @@ public class BasicEnemyShooting : MonoBehaviour
     public GameObject bullet;
     public float startTimeBetweenShots;
     public float timeBetweenShots;
+    public AudioClip shootingSound;
 
     private float  changeSpeedTime = 5f;
     private float maxSpeed;
+    private AudioSource audioSource;
+    
     // Start is called before the first frame update
     void Start()
     {
         timeBetweenShots = startTimeBetweenShots + Random.Range(-0.8f, 0.8f);
+        audioSource = GameObject.Find("Audio").GetComponent<AudioSource>();
         if (this.name == "AstarTestEnemy" || this.name == "BossNinja" || this.name == "NinjaEnemy"){
-            Debug.Log(this.name);
             maxSpeed = this.GetComponent<AIPath>().maxSpeed;
-            Debug.Log(maxSpeed);
             this.GetComponent<AIPath>().endReachedDistance = Random.Range(this.GetComponent<AIPath>().endReachedDistance -3f, this.GetComponent<AIPath>().endReachedDistance + 1f);
         }
     }
@@ -29,6 +31,7 @@ public class BasicEnemyShooting : MonoBehaviour
     {
         if (timeBetweenShots <= 0 && canShoot) {
             GameObject shot = Instantiate(bullet, this.transform.position, this.transform.rotation);
+            audioSource.PlayOneShot(shootingSound);
             shot.GetComponent<BulletScript>().setBulletShooter(gameObject);
             Rigidbody2D rb = shot.GetComponent<Rigidbody2D>();
             if (this.gameObject.name != "TurretFirePoint"){
