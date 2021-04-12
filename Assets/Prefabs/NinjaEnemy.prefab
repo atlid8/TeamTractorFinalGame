@@ -534,7 +534,7 @@ MonoBehaviour:
   room: {fileID: 0}
   nextLeveLStairs: {fileID: 0}
   healthBar: {fileID: 571731089}
-  hitSound: {fileID: 8300000, guid: 1f3c86000fdff4082888c460a62f212f, type: 3}
+  hitSound: {fileID: 8300000, guid: df1727c65d9c74e9f9f9d57d169feafc, type: 3}
 --- !u!50 &241028611459314438
 Rigidbody2D:
   serializedVersion: 4
