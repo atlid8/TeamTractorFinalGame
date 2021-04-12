@@ -7,7 +7,7 @@ using TMPro;
 public class RoomManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public int roomTime;
+    public float roomTime;
     public bool cleared;
     public bool current;
     public int numberOfEnemies = 0;
@@ -105,6 +105,10 @@ public class RoomManager : MonoBehaviour
         current = true;
         if (!cleared){
             timeManager.seconds += roomTime;
+            if (timeManager.seconds > 60f){
+                roomTime = 60 - timeManager.seconds;
+                timeManager.seconds = 60f;
+            }
             if (timerVisualIndicator){StartCoroutine(indicateTime());}
             timeManager.stop = false;
             Transform EnemiesObject = transform.Find("Enemies");
