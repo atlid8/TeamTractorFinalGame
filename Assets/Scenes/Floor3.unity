@@ -4779,6 +4779,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 655795126}
     - target: {fileID: 1938887641653894628, guid: 5cbcdc651d6cf4cca85f1647ba1b02b1, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 595222901}
+    - target: {fileID: 1938887641653894628, guid: 5cbcdc651d6cf4cca85f1647ba1b02b1, type: 3}
       propertyPath: timerCanvas
       value: 
       objectReference: {fileID: 1385531001}

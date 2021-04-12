@@ -5451,6 +5451,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 655795126}
     - target: {fileID: 1938887641653894628, guid: 5cbcdc651d6cf4cca85f1647ba1b02b1, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 272195514}
+    - target: {fileID: 1938887641653894628, guid: 5cbcdc651d6cf4cca85f1647ba1b02b1, type: 3}
       propertyPath: timerCanvas
       value: 
       objectReference: {fileID: 1385531001}
@@ -9433,7 +9437,7 @@ MonoBehaviour:
   canShoot: 0
   bullet: {fileID: 7754768123783791977, guid: c2df36afde51de04f9c2a7bb41b6fba2, type: 3}
   startTimeBetweenShots: 2
-  timeBetweenShots: 1
+  timeBetweenShots: 0.5
   shootingSound: {fileID: 0}
 --- !u!1001 &1638078279
 PrefabInstance:
@@ -11772,7 +11776,7 @@ MonoBehaviour:
   canShoot: 0
   bullet: {fileID: 7754768123783791977, guid: c2df36afde51de04f9c2a7bb41b6fba2, type: 3}
   startTimeBetweenShots: 2
-  timeBetweenShots: 1
+  timeBetweenShots: 0.5
   shootingSound: {fileID: 0}
 --- !u!1 &2125484336
 GameObject:
