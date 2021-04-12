@@ -9,12 +9,14 @@ public class MinuteHandScript : MonoBehaviour
     private Transform anchor;
     private float secs;
     private float angle;
+    private SpriteRenderer minuteHand;
     // Start is called before the first frame update
     void Start()
     {
         timerCanvas = GameObject.Find("TimerCanvas");
         timeManager = timerCanvas.GetComponent<TimeManager>();
         anchor = transform.parent;
+        minuteHand = transform.GetComponentInChildren<SpriteRenderer>();
         
     }
 
@@ -24,5 +26,11 @@ public class MinuteHandScript : MonoBehaviour
         secs = timeManager.seconds;
         angle = (secs / 60) * 360;
         transform.eulerAngles = new Vector3(0,0,angle);
+        if (secs <= 5){
+            minuteHand.color = new Color32(255,0,0,255);
+        }
+        else{
+            minuteHand.color = new Color32(0,0,0,255);
+        }
     }
 }
