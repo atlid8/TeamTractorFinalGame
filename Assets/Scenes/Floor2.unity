@@ -9438,7 +9438,7 @@ MonoBehaviour:
   bullet: {fileID: 7754768123783791977, guid: c2df36afde51de04f9c2a7bb41b6fba2, type: 3}
   startTimeBetweenShots: 2
   timeBetweenShots: 0.5
-  shootingSound: {fileID: 0}
+  shootingSound: {fileID: 8300000, guid: d21a350beaf6c450a986c012e6dbffbf, type: 3}
 --- !u!1001 &1638078279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11777,7 +11777,7 @@ MonoBehaviour:
   bullet: {fileID: 7754768123783791977, guid: c2df36afde51de04f9c2a7bb41b6fba2, type: 3}
   startTimeBetweenShots: 2
   timeBetweenShots: 0.5
-  shootingSound: {fileID: 0}
+  shootingSound: {fileID: 8300000, guid: d21a350beaf6c450a986c012e6dbffbf, type: 3}
 --- !u!1 &2125484336
 GameObject:
   m_ObjectHideFlags: 0
